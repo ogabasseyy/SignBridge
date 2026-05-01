@@ -15,7 +15,7 @@ Light emulator QA for Sign to Speech after wiring top-3 phrase selection to the 
 
 ## Result
 
-Passed with current placeholder classifier/runtime limitations.
+Passed with earlier placeholder classifier/runtime limitations.
 
 The emulator launched SignBridge, accepted the disclaimer, navigated Home -> Sign to Speech, granted camera permission, recorded enough frames, stopped capture, displayed top-3 predictions, accepted `I am Deaf` from the picker, reconstructed the speakable text through the current `GemmaClient` boundary, and exposed the manual `Speak` action.
 
@@ -50,6 +50,10 @@ FrameLayout id=android:id/content bounds=[0,0][1080,2400]
     View flags=clickable,focusable bounds=[556,2148][1017,2337]
       TextView text="Clear" bounds=[712,2206][862,2279]
 ```
+
+## Superseded By
+
+`docs/verification/test-android-apps-smoke-forward-litert.md` supersedes this smoke for the current classifier runtime path. The newer smoke verifies LiteRT/TFLite model loading with the untrained contract model.
 
 ## Notes
 

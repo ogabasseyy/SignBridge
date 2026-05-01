@@ -11,7 +11,7 @@ SignBridge is scoped to one bounded workflow: a Deaf signer in a stressful Lagos
 - Home, Emergency, Sign to Speech, Listen, and Settings screens.
 - Emergency grid with six large TTS-ready phrases.
 - CameraX Sign to Speech shell with push-to-sign state.
-- Placeholder classifier integration with top-3 picker.
+- LiteRT/TFLite classifier runtime integration with top-3 picker.
 - Selected phrase -> app-level tool trace -> `GemmaClient` boundary -> speakable preview -> manual Speak action.
 - Listen typed-reply fallback with one-sentence condensation.
 - Privacy-first settings: auto-speak off, data contribution off, threshold 0.65.
@@ -24,7 +24,7 @@ This is not yet a final hackathon submission build.
 - Physical Galaxy S24 Ultra Gate 0: AICore/Gemma 4 runtime must be verified in-app.
 - Live ML Kit Prompt API or LiteRT-LM Gemma generation must replace the current deterministic placeholder.
 - MediaPipe Holistic `.task` asset and real landmark extraction must be wired.
-- The current TFLite classifier file is a valid untrained contract model; a trained classifier must still be exported from real landmark data.
+- The current TFLite classifier file is a valid untrained contract model; trained weights must still be exported from real landmark data.
 - Offline microphone speech recognition must be verified on the physical phone. Typed reply fallback is implemented.
 
 ## Privacy

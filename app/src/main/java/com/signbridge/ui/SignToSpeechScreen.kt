@@ -20,6 +20,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -43,12 +44,14 @@ import com.signbridge.ml.PlaceholderSignInterpreter
 import com.signbridge.ml.SignClassifier
 import com.signbridge.ml.SignClassifierAssets
 import com.signbridge.ml.SlidingWindowBuffer
+import com.signbridge.ml.TfliteSignInterpreter
 import com.signbridge.sign.SignCaptureAction
 import com.signbridge.sign.SignCaptureReducer
 import com.signbridge.sign.SignCaptureState
 import com.signbridge.tts.Speaker
 import com.signbridge.ui.components.OfflineBadge
 import com.signbridge.ui.debug.LandmarkOverlay
+import java.util.concurrent.atomic.AtomicBoolean
 import kotlinx.coroutines.launch
 
 @Composable
@@ -71,10 +74,26 @@ fun SignToSpeechScreen(
             SignClassifierAssets.parseLabels(input.bufferedReader().readText())
         }
     }
-    val classifier = remember(labels) {
+    val signInterpreter = remember(context, labels) {
+        runCatching {
+            TfliteSignInterpreter.fromAssets(
+                assets = context.assets,
+                modelPath = "signbridge_phrases_v1.tflite",
+                outputSize = labels.size,
+            )
+        }.getOrElse {
+            PlaceholderSignInterpreter(outputSize = labels.size)
+        }
+    }
+    DisposableEffect(signInterpreter) {
+        onDispose {
+            (signInterpreter as? AutoCloseable)?.close()
+        }
+    }
+    val classifier = remember(labels, signInterpreter) {
         SignClassifier(
             labels = labels,
-            interpreter = PlaceholderSignInterpreter(outputSize = labels.size),
+            interpreter = signInterpreter,
         )
     }
     val slidingWindow = remember {
@@ -92,6 +111,7 @@ fun SignToSpeechScreen(
     var predictions by remember { mutableStateOf<List<ClassificationResult>>(emptyList()) }
     var selectedGloss by remember { mutableStateOf<String?>(null) }
     var speakableText by remember { mutableStateOf("") }
+    val analyzerRecordingGate = remember { AtomicBoolean(false) }
     val currentCaptureState by rememberUpdatedState(captureState)
     val translateGloss: (String) -> Unit = { gloss ->
         selectedGloss = gloss
@@ -118,7 +138,7 @@ fun SignToSpeechScreen(
         FrameAnalyzer(
             onFrameAccepted = {
                 val state = currentCaptureState
-                if (state is SignCaptureState.Recording) {
+                if (analyzerRecordingGate.get() && state is SignCaptureState.Recording) {
                     slidingWindow.add(FloatArray(LandmarkFrame.TENSOR_SIZE))
                     captureState = SignCaptureReducer.reduce(state, SignCaptureAction.FrameAccepted)
                 }
@@ -186,10 +206,12 @@ fun SignToSpeechScreen(
                             predictions = emptyList()
                             selectedGloss = null
                             speakableText = ""
+                            analyzerRecordingGate.set(true)
                             SignCaptureReducer.reduce(state, SignCaptureAction.StartRecording)
                         }
 
                         is SignCaptureState.Recording -> {
+                            analyzerRecordingGate.set(false)
                             val next = SignCaptureReducer.reduce(state, SignCaptureAction.StopRecording)
                             predictions = if (slidingWindow.isReady) {
                                 classifier.classify(slidingWindow.toTensor())
@@ -213,7 +235,9 @@ fun SignToSpeechScreen(
                         SignCaptureState.Processing -> SignCaptureReducer.reduce(
                             state,
                             SignCaptureAction.Reset,
-                        )
+                        ).also {
+                            analyzerRecordingGate.set(false)
+                        }
                     }
                 },
             )

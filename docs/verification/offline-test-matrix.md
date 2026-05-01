@@ -5,7 +5,7 @@ Date: 2026-05-01
 ## Current Build
 
 - APK: `app/build/outputs/apk/debug/app-debug.apk`
-- APK size: 85 MB
+- APK size: 104 MB
 - Permissions declared:
   - `android.permission.CAMERA`
   - `android.permission.RECORD_AUDIO`

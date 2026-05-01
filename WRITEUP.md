@@ -48,7 +48,7 @@ Current:
 - Landmark normalization and tensor-shape contracts are tested.
 - TFLite export scripts and metadata contracts exist.
 - Public synthetic landmark fixture exists for CI/public review.
-- The committed `.tflite` is a valid untrained contract model, documented in `docs/verification/classifier-report.md`.
+- The committed `.tflite` is a valid untrained contract model loaded through the Android LiteRT runtime, documented in `docs/verification/classifier-report.md`.
 
 ## Reverse Loop
 

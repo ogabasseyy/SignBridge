@@ -1,7 +1,27 @@
 package com.signbridge.ml
 
+import android.content.res.AssetManager
+import org.tensorflow.lite.Interpreter
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
+
 interface SignInterpreter {
     fun run(input: FloatArray): FloatArray
+}
+
+object SignClassifierInput {
+    fun reshape(input: FloatArray): Array<Array<FloatArray>> {
+        require(input.size == 30 * 1629) {
+            "Expected ${30 * 1629} input values but got ${input.size}"
+        }
+        return Array(1) {
+            Array(30) { frame ->
+                FloatArray(1629) { landmark ->
+                    input[(frame * 1629) + landmark]
+                }
+            }
+        }
+    }
 }
 
 class SignClassifier(
@@ -37,5 +57,39 @@ class PlaceholderSignInterpreter(
             scores[scores.lastIndex] = 1.0f
         }
         return scores
+    }
+}
+
+class TfliteSignInterpreter private constructor(
+    modelBuffer: ByteBuffer,
+    private val outputSize: Int,
+) : SignInterpreter, AutoCloseable {
+    private val interpreter = Interpreter(modelBuffer)
+
+    override fun run(input: FloatArray): FloatArray {
+        val output = Array(1) { FloatArray(outputSize) }
+        interpreter.run(SignClassifierInput.reshape(input), output)
+        return output[0]
+    }
+
+    override fun close() {
+        interpreter.close()
+    }
+
+    companion object {
+        fun fromAssets(
+            assets: AssetManager,
+            modelPath: String,
+            outputSize: Int,
+        ): TfliteSignInterpreter {
+            val bytes = assets.open(modelPath).use { input ->
+                input.readBytes()
+            }
+            val buffer = ByteBuffer.allocateDirect(bytes.size)
+                .order(ByteOrder.nativeOrder())
+            buffer.put(bytes)
+            buffer.rewind()
+            return TfliteSignInterpreter(buffer, outputSize)
+        }
     }
 }

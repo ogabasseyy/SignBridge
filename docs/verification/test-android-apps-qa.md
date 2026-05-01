@@ -28,7 +28,7 @@ Passed for emulator/plugin QA. Physical S24 QA remains separate in `docs/verific
 | Emergency grid | Passed | `docs/verification/test-android-apps-smoke-emergency.md` |
 | Camera/Sign to Speech shell | Passed | `docs/verification/test-android-apps-smoke-camera.md` |
 | Placeholder classifier top-3 | Passed | `docs/verification/test-android-apps-smoke-classifier-placeholder.png` |
-| Forward translation preview | Passed | `docs/verification/test-android-apps-smoke-forward-translation.md` |
+| Forward translation preview | Passed | `docs/verification/test-android-apps-smoke-forward-litert.md` |
 | Listen typed fallback | Passed | `docs/verification/test-android-apps-smoke-listen.md` |
 | Onboarding and settings | Passed | `docs/verification/test-android-apps-smoke-settings.md` |
 
@@ -36,4 +36,4 @@ Passed for emulator/plugin QA. Physical S24 QA remains separate in `docs/verific
 
 - Emulator QA cannot validate S24 AICore/Gemma availability.
 - Emulator QA cannot validate actual S24 camera, speaker, microphone, or offline TTS voice availability.
-- Current sign recognition is UI/integration-placeholder behavior until real landmarks and trained TFLite are wired.
+- Current sign recognition uses LiteRT/TFLite runtime with an untrained contract model; real landmarks and trained weights are still pending.

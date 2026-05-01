@@ -35,6 +35,7 @@ dependencies {
     implementation(libs.androidx.camera.view)
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.mediapipe.tasks.vision)
+    implementation(libs.litert)
     implementation(libs.mlkit.genai.prompt)
     implementation(libs.mlkit.genai.speech.recognition)
 

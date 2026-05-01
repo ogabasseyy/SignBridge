@@ -5,7 +5,7 @@ Date: 2026-05-01
 ## Current Artifact
 
 - Debug APK: `app/build/outputs/apk/debug/app-debug.apk`
-- Debug APK size: 85 MB
+- Debug APK size: 104 MB
 - Status: built and emulator-tested.
 
 ## Release Signing Status

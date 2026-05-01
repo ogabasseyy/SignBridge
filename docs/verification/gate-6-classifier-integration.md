@@ -6,7 +6,7 @@ Date: 2026-05-01
 
 Partially passed.
 
-The Android app integrates the classifier asset contract, 30-frame sliding window, label parsing, top-3 result mapping, and Sign to Speech prediction UI. The checked-in `.tflite` is now a valid untrained contract model, but the Android runtime still uses a placeholder interpreter until real TFLite runtime wiring is added.
+The Android app integrates the classifier asset contract, 30-frame sliding window, label parsing, top-3 result mapping, LiteRT/TFLite runtime loading, and Sign to Speech prediction UI. The checked-in `.tflite` is a valid untrained contract model, not a trained recognizer.
 
 ## Review
 
@@ -24,21 +24,21 @@ The Android app integrates the classifier asset contract, 30-frame sliding windo
   - dtype is `float32`
 - Sign to Speech screen now shows top-3 predictions after capture.
 - The app does not auto-speak classifier output.
-- Emulator smoke showed:
-  - `unknown (100%)`
-  - `1. unknown 100%`
-  - `2. I am Deaf 0%`
-  - `3. Please calm down 0%`
+- Latest LiteRT emulator smoke showed:
+  - `I am Deaf (3%)`
+  - `1. I am Deaf 3%`
+  - `2. Please calm down 3%`
+  - `3. Please write it down 3%`
 - No app fatal crash appeared in the classifier smoke log after fixing the Android ICU regex issue.
 
 ## Evidence
 
-- Screenshot: `docs/verification/test-android-apps-smoke-classifier-placeholder.png`
-- Logcat: `docs/verification/test-android-apps-smoke-classifier-placeholder-logcat.txt`
+- Latest screenshot: `docs/verification/test-android-apps-smoke-forward-litert.png`
+- Latest logcat: `docs/verification/test-android-apps-smoke-forward-litert-logcat.txt`
+- Earlier placeholder evidence remains in `docs/verification/test-android-apps-smoke-classifier-placeholder.png`.
 
 ## Remaining Gate Work
 
-- Replace placeholder interpreter with real LiteRT/TFLite runtime.
 - Replace the untrained contract model with a trained classifier after private-data training.
 - Use actual normalized landmark windows instead of zero-filled placeholder frames.
 - Verify demo-critical phrase predictions on physical S24 Ultra.
