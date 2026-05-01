@@ -1,6 +1,7 @@
 .gradle/
 .idea/
 .kotlin/
+.venv/
 build/
 **/build/
 local.properties
@@ -30,4 +31,3 @@ ml/models/downloads/
 # OS/editor
 .DS_Store
 *.swp
-

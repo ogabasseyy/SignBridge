@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "labels": [
+    { "id": 1, "label": "I am Deaf" },
+    { "id": 2, "label": "Please calm down" },
+    { "id": 3, "label": "Please write it down" },
+    { "id": 4, "label": "Please speak slowly" },
+    { "id": 5, "label": "I do not understand" },
+    { "id": 6, "label": "It was an accident" },
+    { "id": 7, "label": "My brakes failed" },
+    { "id": 8, "label": "I have insurance" },
+    { "id": 9, "label": "I am injured" },
+    { "id": 10, "label": "I need a doctor" },
+    { "id": 11, "label": "Please call emergency services" },
+    { "id": 12, "label": "I am not trying to fight" },
+    { "id": 13, "label": "Please call someone for me" },
+    { "id": 14, "label": "I have pain" },
+    { "id": 15, "label": "I am allergic" },
+    { "id": 16, "label": "I need medicine" },
+    { "id": 17, "label": "Please write the dosage" },
+    { "id": 18, "label": "Please show me the price" },
+    { "id": 19, "label": "How much is this?" },
+    { "id": 20, "label": "I want to pay" },
+    { "id": 21, "label": "Where is the restroom?" },
+    { "id": 22, "label": "Please type your reply" },
+    { "id": 23, "label": "Help me" },
+    { "id": 24, "label": "I cannot hear you" },
+    { "id": 25, "label": "Use my phone" },
+    { "id": 26, "label": "unknown" }
+  ]
+}
