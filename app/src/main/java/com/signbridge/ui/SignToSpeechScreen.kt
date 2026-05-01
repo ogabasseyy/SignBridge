@@ -33,6 +33,11 @@ import androidx.compose.ui.unit.sp
 import com.signbridge.camera.CameraPreview
 import com.signbridge.camera.FrameAnalyzer
 import com.signbridge.landmarks.LandmarkFrame
+import com.signbridge.ml.ClassificationResult
+import com.signbridge.ml.PlaceholderSignInterpreter
+import com.signbridge.ml.SignClassifier
+import com.signbridge.ml.SignClassifierAssets
+import com.signbridge.ml.SlidingWindowBuffer
 import com.signbridge.sign.SignCaptureAction
 import com.signbridge.sign.SignCaptureReducer
 import com.signbridge.sign.SignCaptureState
@@ -50,18 +55,37 @@ fun SignToSpeechScreen(
             context.checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED,
         )
     }
+    val labels = remember(context) {
+        context.assets.open("signbridge_phrases_v1.labels.json").use { input ->
+            SignClassifierAssets.parseLabels(input.bufferedReader().readText())
+        }
+    }
+    val classifier = remember(labels) {
+        SignClassifier(
+            labels = labels,
+            interpreter = PlaceholderSignInterpreter(outputSize = labels.size),
+        )
+    }
+    val slidingWindow = remember {
+        SlidingWindowBuffer(
+            windowSize = 30,
+            frameSize = LandmarkFrame.TENSOR_SIZE,
+        )
+    }
     val permissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission(),
         onResult = { granted -> hasCameraPermission = granted },
     )
     var captureState by remember { mutableStateOf<SignCaptureState>(SignCaptureState.Idle) }
     var latestLandmarks by remember { mutableStateOf<LandmarkFrame?>(null) }
+    var predictions by remember { mutableStateOf<List<ClassificationResult>>(emptyList()) }
     val currentCaptureState by rememberUpdatedState(captureState)
     val analyzer = remember {
         FrameAnalyzer(
             onFrameAccepted = {
                 val state = currentCaptureState
                 if (state is SignCaptureState.Recording) {
+                    slidingWindow.add(FloatArray(LandmarkFrame.TENSOR_SIZE))
                     captureState = SignCaptureReducer.reduce(state, SignCaptureAction.FrameAccepted)
                 }
             },
@@ -112,26 +136,66 @@ fun SignToSpeechScreen(
                 )
             }
             CaptureStatus(captureState)
+            PredictionList(predictions)
             CaptureButton(
                 state = captureState,
                 onClick = {
                     captureState = when (val state = captureState) {
                         SignCaptureState.Idle,
-                        is SignCaptureState.Result -> SignCaptureReducer.reduce(
-                            state,
-                            SignCaptureAction.StartRecording,
-                        )
+                        is SignCaptureState.Result -> {
+                            slidingWindow.reset()
+                            predictions = emptyList()
+                            SignCaptureReducer.reduce(state, SignCaptureAction.StartRecording)
+                        }
 
-                        is SignCaptureState.Recording -> SignCaptureReducer.reduce(
-                            state,
-                            SignCaptureAction.StopRecording,
-                        )
+                        is SignCaptureState.Recording -> {
+                            val next = SignCaptureReducer.reduce(state, SignCaptureAction.StopRecording)
+                            predictions = if (slidingWindow.isReady) {
+                                classifier.classify(slidingWindow.toTensor())
+                            } else {
+                                emptyList()
+                            }
+                            if (predictions.isNotEmpty()) {
+                                SignCaptureReducer.reduce(
+                                    next,
+                                    SignCaptureAction.ResultReady(
+                                        gloss = predictions.first().label,
+                                        confidence = predictions.first().confidence,
+                                    ),
+                                )
+                            } else {
+                                next
+                            }
+                        }
 
                         SignCaptureState.Processing -> SignCaptureReducer.reduce(
                             state,
                             SignCaptureAction.Reset,
                         )
                     }
+                },
+            )
+        }
+    }
+}
+
+@Composable
+private fun PredictionList(predictions: List<ClassificationResult>) {
+    if (predictions.isEmpty()) return
+
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(6.dp),
+    ) {
+        predictions.forEachIndexed { index, result ->
+            Text(
+                text = "${index + 1}. ${result.label} ${(result.confidence * 100).toInt()}%",
+                fontSize = 22.sp,
+                lineHeight = 26.sp,
+                color = if (result.confidence >= 0.65f) {
+                    MaterialTheme.colorScheme.onSurface
+                } else {
+                    MaterialTheme.colorScheme.onSurfaceVariant
                 },
             )
         }
