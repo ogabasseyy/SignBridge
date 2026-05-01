@@ -37,7 +37,11 @@ Prompt construction, app-level tool trace, constrained JSON parsing, determinist
 - Replace deterministic `MlKitGemmaClient.generate(...)` fallback with live Prompt API generation only after runtime availability is verified.
 - Enable and implement `LiteRtGemmaClient` against LiteRT-LM only if Prompt API fails on the S24 Ultra.
 - Run at least 20 no-added-facts prompt cases against the selected live runtime.
-- Wire selected prediction -> Gemma reconstruction -> TTS in the Sign to Speech screen.
+
+## Follow-Up Wiring Completed
+
+- Selected prediction -> app-level tool trace -> `GemmaClient.reconstructSentence(...)` -> speakable preview -> manual TTS action is wired in the Sign to Speech screen.
+- Evidence: `docs/verification/test-android-apps-smoke-forward-translation.md`
 
 ## Verification Commands
 

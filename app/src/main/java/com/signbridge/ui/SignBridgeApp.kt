@@ -13,6 +13,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import com.signbridge.emergency.EmergencyPhrasePresenter
+import com.signbridge.gemma.FakeGemmaClient
 import com.signbridge.navigation.AppDestination
 import com.signbridge.onboarding.DisclaimerAction
 import com.signbridge.onboarding.DisclaimerReducer
@@ -44,6 +45,7 @@ fun SignBridgeAppContent(
     }
     val settingsStore = remember { MemorySettingsStore() }
     var settings by remember { mutableStateOf(settingsStore.read()) }
+    val gemmaClient = remember { FakeGemmaClient() }
 
     MaterialTheme(colorScheme = darkColorScheme()) {
         if (disclaimerState.shouldShowDisclaimer) {
@@ -70,6 +72,9 @@ fun SignBridgeAppContent(
 
                     AppDestination.SignToSpeech -> SignToSpeechScreen(
                         onBack = { destination = AppDestination.Home },
+                        speaker = speaker,
+                        gemmaClient = gemmaClient,
+                        confidenceThreshold = settings.confidenceThreshold,
                     )
 
                     AppDestination.Listen -> ListenScreen(

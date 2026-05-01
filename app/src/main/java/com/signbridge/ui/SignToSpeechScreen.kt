@@ -13,6 +13,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -21,6 +23,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -32,6 +35,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.signbridge.camera.CameraPreview
 import com.signbridge.camera.FrameAnalyzer
+import com.signbridge.forward.ForwardPhraseComposer
+import com.signbridge.gemma.GemmaClient
 import com.signbridge.landmarks.LandmarkFrame
 import com.signbridge.ml.ClassificationResult
 import com.signbridge.ml.PlaceholderSignInterpreter
@@ -41,15 +46,21 @@ import com.signbridge.ml.SlidingWindowBuffer
 import com.signbridge.sign.SignCaptureAction
 import com.signbridge.sign.SignCaptureReducer
 import com.signbridge.sign.SignCaptureState
+import com.signbridge.tts.Speaker
 import com.signbridge.ui.components.OfflineBadge
 import com.signbridge.ui.debug.LandmarkOverlay
+import kotlinx.coroutines.launch
 
 @Composable
 fun SignToSpeechScreen(
     onBack: () -> Unit,
+    speaker: Speaker,
+    gemmaClient: GemmaClient,
+    confidenceThreshold: Float,
     modifier: Modifier = Modifier,
 ) {
     val context = LocalContext.current
+    val scope = rememberCoroutineScope()
     var hasCameraPermission by remember {
         mutableStateOf(
             context.checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED,
@@ -79,7 +90,30 @@ fun SignToSpeechScreen(
     var captureState by remember { mutableStateOf<SignCaptureState>(SignCaptureState.Idle) }
     var latestLandmarks by remember { mutableStateOf<LandmarkFrame?>(null) }
     var predictions by remember { mutableStateOf<List<ClassificationResult>>(emptyList()) }
+    var selectedGloss by remember { mutableStateOf<String?>(null) }
+    var speakableText by remember { mutableStateOf("") }
     val currentCaptureState by rememberUpdatedState(captureState)
+    val translateGloss: (String) -> Unit = { gloss ->
+        selectedGloss = gloss
+        if (gloss == "unknown") {
+            speakableText = "Please repeat."
+        } else {
+            speakableText = "Preparing sentence..."
+            val glosses = listOf(gloss)
+            val trace = ForwardPhraseComposer.toolTrace(
+                glosses = glosses,
+                urgent = gloss.isUrgentGloss(),
+            )
+            scope.launch {
+                val result = gemmaClient.reconstructSentence(
+                    glosses = glosses,
+                    context = trace.context,
+                    tone = trace.tone,
+                )
+                speakableText = result.speakableText
+            }
+        }
+    }
     val analyzer = remember {
         FrameAnalyzer(
             onFrameAccepted = {
@@ -96,6 +130,7 @@ fun SignToSpeechScreen(
     Column(
         modifier = modifier
             .fillMaxSize()
+            .verticalScroll(rememberScrollState())
             .padding(24.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
@@ -136,7 +171,11 @@ fun SignToSpeechScreen(
                 )
             }
             CaptureStatus(captureState)
-            PredictionList(predictions)
+            PredictionList(
+                predictions = predictions,
+                confidenceThreshold = confidenceThreshold,
+                onSelect = translateGloss,
+            )
             CaptureButton(
                 state = captureState,
                 onClick = {
@@ -145,6 +184,8 @@ fun SignToSpeechScreen(
                         is SignCaptureState.Result -> {
                             slidingWindow.reset()
                             predictions = emptyList()
+                            selectedGloss = null
+                            speakableText = ""
                             SignCaptureReducer.reduce(state, SignCaptureAction.StartRecording)
                         }
 
@@ -156,6 +197,7 @@ fun SignToSpeechScreen(
                                 emptyList()
                             }
                             if (predictions.isNotEmpty()) {
+                                translateGloss(predictions.first().label)
                                 SignCaptureReducer.reduce(
                                     next,
                                     SignCaptureAction.ResultReady(
@@ -175,29 +217,56 @@ fun SignToSpeechScreen(
                     }
                 },
             )
+            TranslationPanel(
+                selectedGloss = selectedGloss,
+                speakableText = speakableText,
+                onSpeak = { speaker.speak(speakableText) },
+                onClear = {
+                    selectedGloss = null
+                    speakableText = ""
+                },
+            )
         }
     }
 }
 
 @Composable
-private fun PredictionList(predictions: List<ClassificationResult>) {
+private fun PredictionList(
+    predictions: List<ClassificationResult>,
+    confidenceThreshold: Float,
+    onSelect: (String) -> Unit,
+) {
     if (predictions.isEmpty()) return
 
     Column(
         modifier = Modifier.fillMaxWidth(),
-        verticalArrangement = Arrangement.spacedBy(6.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
+        Text(
+            text = "Pick the right phrase",
+            fontSize = 22.sp,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
         predictions.forEachIndexed { index, result ->
-            Text(
-                text = "${index + 1}. ${result.label} ${(result.confidence * 100).toInt()}%",
-                fontSize = 22.sp,
-                lineHeight = 26.sp,
-                color = if (result.confidence >= 0.65f) {
-                    MaterialTheme.colorScheme.onSurface
-                } else {
-                    MaterialTheme.colorScheme.onSurfaceVariant
-                },
-            )
+            Button(
+                onClick = { onSelect(result.label) },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .heightIn(min = 64.dp),
+                shape = MaterialTheme.shapes.medium,
+            ) {
+                Text(
+                    text = "${index + 1}. ${result.label} ${(result.confidence * 100).toInt()}%",
+                    fontSize = 22.sp,
+                    lineHeight = 26.sp,
+                    textAlign = TextAlign.Center,
+                    color = if (result.confidence >= confidenceThreshold) {
+                        MaterialTheme.colorScheme.onPrimary
+                    } else {
+                        MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.72f)
+                    },
+                )
+            }
         }
     }
 }
@@ -263,4 +332,64 @@ private fun CaptureButton(
             textAlign = TextAlign.Center,
         )
     }
+}
+
+@Composable
+private fun TranslationPanel(
+    selectedGloss: String?,
+    speakableText: String,
+    onSpeak: () -> Unit,
+    onClear: () -> Unit,
+) {
+    if (speakableText.isBlank()) return
+
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        Text(
+            text = selectedGloss?.let { "Selected: $it" } ?: "Selected phrase",
+            fontSize = 20.sp,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        Text(
+            text = speakableText,
+            fontSize = 30.sp,
+            lineHeight = 36.sp,
+            color = MaterialTheme.colorScheme.onSurface,
+        )
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            Button(
+                onClick = onSpeak,
+                modifier = Modifier
+                    .weight(1f)
+                    .heightIn(min = 72.dp),
+                enabled = speakableText != "Preparing sentence...",
+            ) {
+                Text(
+                    text = "Speak",
+                    fontSize = 24.sp,
+                )
+            }
+            TextButton(
+                onClick = onClear,
+                modifier = Modifier
+                    .weight(1f)
+                    .heightIn(min = 72.dp),
+            ) {
+                Text(
+                    text = "Clear",
+                    fontSize = 24.sp,
+                )
+            }
+        }
+    }
+}
+
+private fun String.isUrgentGloss(): Boolean {
+    val text = lowercase()
+    return listOf("injured", "doctor", "emergency", "help").any { it in text }
 }
