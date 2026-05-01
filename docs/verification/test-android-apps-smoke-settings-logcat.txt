@@ -1,0 +1,1075 @@
+--------- beginning of system
+05-01 18:15:18.685  2599  3707 I AppsFilter: interaction: PackageSetting{ac9ed3 com.cleancontacts.app/10225} -> PackageSetting{a301dbc com.signbridge/10238} BLOCKED
+05-01 18:15:18.685  2599  3707 I AppsFilter: interaction: PackageSetting{9ba2909 com.ogabassey.contactscleaner.debug/10226} -> PackageSetting{a301dbc com.signbridge/10238} BLOCKED
+05-01 18:15:18.685  2599  3707 I AppsFilter: interaction: PackageSetting{2ba670e com.ogabassey.store/10230} -> PackageSetting{a301dbc com.signbridge/10238} BLOCKED
+05-01 18:15:18.685  2599  3707 I AppsFilter: interaction: PackageSetting{798552f com.ogabassey.baci/10224} -> PackageSetting{a301dbc com.signbridge/10238} BLOCKED
+--------- beginning of main
+05-01 18:15:18.688  3054  3054 D CarrierSvcBindHelper: onHandleForceStop: [com.signbridge]
+05-01 18:15:18.689  3054  3054 D CarrierSvcBindHelper: No carrier app for: 0
+05-01 18:15:18.986  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:20.943  3054  3142 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+05-01 18:15:20.943  3054  3142 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+05-01 18:15:21.109  4139 13818 W WakeLock: GCM_HB_ALARM release without a matched acquire! [CONTEXT service_id=259 ]
+05-01 18:15:21.109  4139 13818 W WakeLock: GCM_HB_ALARM counter does not exist
+05-01 18:15:21.111  4139 13818 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 6215609]
+05-01 18:15:21.111  4139 13818 W WakeLock: GCM_CONN_ALARM counter does not exist
+05-01 18:15:21.119  2599  2682 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:21.491  4199  4384 E TraceManagerImpl: Trace Broadcast to com.google.android.apps.wellbeing.common.receiver.coalescedreceivers.PackageFullyRemovedCoalescedBroadcast_Receiver android.intent.action.PACKAGE_FULLY_REMOVED timed out after 1263762 ms. Complete trace: # npv@bf063bdb
+05-01 18:15:21.491  4199  4384 E TraceManagerImpl: nqa: 
+05-01 18:15:21.491  4199  4384 E TraceManagerImpl: 	at tk_trace.Update PackageSuspensionHandlerPreferences(Started After:0)
+05-01 18:15:21.491  4199  4384 E TraceManagerImpl: 	at tk_trace.Processing on the broadcast queue workerId PACKAGE_FULLY_REMOVED_COALESCED_BROADCAST_WORKER_ID(Started After:0)
+05-01 18:15:21.491  4199  4384 E TraceManagerImpl: 	at tk_trace.handleBroadcast(Started After:0)
+05-01 18:15:21.491  4199  4384 E TraceManagerImpl: 	at tk_trace.Broadcast to com.google.android.apps.wellbeing.common.receiver.coalescedreceivers.PackageFullyRemovedCoalescedBroadcast_Receiver android.intent.action.PACKAGE_FULLY_REMOVED(Started After:0)
+05-01 18:15:21.493  2599  2742 D ActivityManager: freezing 4522 com.google.android.tts
+05-01 18:15:21.495  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-01 18:15:21.496  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-01 18:15:21.496  2599  2802 D InetDiagMessage: Destroyed live tcp sockets for uids={10165} in 0ms
+05-01 18:15:21.633  2599  2742 D ActivityManager: freezing 5567 com.android.vending:background
+05-01 18:15:21.633  2599  2742 D ActivityManager: freezing 8138 com.android.vending
+05-01 18:15:21.634  2599  2742 D ActivityManager: freezing 4352 com.google.android.apps.messaging
+05-01 18:15:21.682  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-01 18:15:21.682  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-01 18:15:21.682  2599  2802 D InetDiagMessage: Destroyed live tcp sockets for uids={10153} in 1ms
+05-01 18:15:21.994  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:22.688  2970  2970 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+05-01 18:15:22.689  2970  2970 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+05-01 18:15:22.689  2970  2970 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+05-01 18:15:22.689  2970  2970 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+05-01 18:15:22.690  2970 14167 D NetworkMonitor/103: PROBE_DNS www.google.com 10022ms FAIL in type ADDRCONFIG android.net.DnsResolver$DnsException: android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+05-01 18:15:22.690  2970 14168 D NetworkMonitor/103: PROBE_DNS connectivitycheck.gstatic.com 10022ms FAIL in type ADDRCONFIG android.net.DnsResolver$DnsException: android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+05-01 18:15:22.839  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-01 18:15:22.839  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-01 18:15:22.839  2599  2802 D InetDiagMessage: Destroyed live tcp sockets for uids={10159} in 1ms
+05-01 18:15:22.840  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-01 18:15:22.840  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-01 18:15:22.840  2599  2802 D InetDiagMessage: Destroyed live tcp sockets for uids={20159} in 1ms
+05-01 18:15:23.029  2599  3694 W ActivityTaskManager: callingPackage for (uid=2000, pid=14200) has no WPC
+05-01 18:15:23.030  2599  3694 V WindowManager: DesktopModeLaunchParamsModifier: phase= 0 task=null activity=null display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257994866 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257994866 task null, skipping
+05-01 18:15:23.030  2599  3694 V WindowManager: TaskLaunchParamsModifier:phase=0 task=null activity=null display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257994866 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257994866
+05-01 18:15:23.031  2599  3694 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@33257688 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-01 18:15:23.031  2599  3694 V WindowManager: DesktopModeLaunchParamsModifier: phase= 0 task=null activity=ActivityRecord{43602563 u0 com.signbridge/.MainActivity display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257994866 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257994866 task null, skipping
+05-01 18:15:23.031  2599  3694 V WindowManager: TaskLaunchParamsModifier:phase=0 task=null activity=ActivityRecord{43602563 u0 com.signbridge/.MainActivity t-1} display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257994866 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257994866
+05-01 18:15:23.031  2599  3694 V WindowManager: DesktopModeLaunchParamsModifier: phase= 3 task=null activity=ActivityRecord{43602563 u0 com.signbridge/.MainActivity t-1} display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257994866 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257994866 task null, skipping
+05-01 18:15:23.031  2599  3694 V WindowManager: TaskLaunchParamsModifier:phase=3 task=null activity=ActivityRecord{43602563 u0 com.signbridge/.MainActivity t-1} display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@257994866 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257994866 non-freeform-task-display-area display-area=DefaultTaskDisplayArea@257994866 skip-bounds-fullscreen
+05-01 18:15:23.033  2599  3694 V WindowManager: DesktopModeLaunchParamsModifier: phase= 3 task=Task{6be3c00 #71 type=standard A=10238:com.signbridge} activity=ActivityRecord{43602563 u0 com.signbridge/.MainActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257994866 not entering desktop mode, skipping
+05-01 18:15:23.033  2599  3694 V WindowManager: TaskLaunchParamsModifier:phase=3 task=Task{6be3c00 #71 type=standard A=10238:com.signbridge} activity=ActivityRecord{43602563 u0 com.signbridge/.MainActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@257994866 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@257994866 skip-bounds-fullscreen
+05-01 18:15:23.034   561   645 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for descriptor: '(not cached)'
+05-01 18:15:23.035  2599  3694 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.signbridge/.MainActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_PERMISSION) result code=0
+05-01 18:15:23.036  3066  3066 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused] -[state_user_active]
+05-01 18:15:23.036  3066  3066 D BaseActivity: Launcher flags updated: [state_started|state_window_focused] -[state_resumed|state_deferred_resumed]
+05-01 18:15:23.036  2896  2967 V WindowManagerShell: Transition requested (#53): android.os.BinderProxy@37c0be1 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=71 effectiveUid=10238 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.signbridge/.MainActivity } baseActivity=ComponentInfo{com.signbridge/com.signbridge.MainActivity} topActivity=ComponentInfo{com.signbridge/com.signbridge.MainActivity} origActivity=null realActivity=ComponentInfo{com.signbridge/com.signbridge.MainActivity} numActivities=1 lastActiveTime=6105534 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@875cd06} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{7444fc7 com.signbridge.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 53 }
+05-01 18:15:23.036  2896  2967 D ShellSplitScreen: logExit: no-op, mLoggerSessionId is null
+05-01 18:15:23.036  2896  2967 V ShellDesktopMode: DesktopTasksController: handleRequest request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=71 effectiveUid=10238 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.signbridge/.MainActivity } baseActivity=ComponentInfo{com.signbridge/com.signbridge.MainActivity} topActivity=ComponentInfo{com.signbridge/com.signbridge.MainActivity} origActivity=null realActivity=ComponentInfo{com.signbridge/com.signbridge.MainActivity} numActivities=1 lastActiveTime=6105534 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@875cd06} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{7444fc7 com.signbridge.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 53 }
+05-01 18:15:23.036  2896  2967 V ShellDesktopMode: DesktopTasksController: skipping handleRequest reason=triggerTask's display doesn't support desktop mode
+05-01 18:15:23.037  3066  3066 W SplitSelectStateCtor: Missing session instanceIds
+05-01 18:15:23.037  3066  3066 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+05-01 18:15:23.038  2599  3707 D CompatChangeReporter: Compat change id reported: 377864165; UID 10238; state: ENABLED
+05-01 18:15:23.038  2599  3144 I AppsFilter: interaction: PackageSetting{ac9ed3 com.cleancontacts.app/10225} -> PackageSetting{cb182c com.signbridge/10238} BLOCKED
+05-01 18:15:23.038  2599  3144 I AppsFilter: interaction: PackageSetting{9ba2909 com.ogabassey.contactscleaner.debug/10226} -> PackageSetting{cb182c com.signbridge/10238} BLOCKED
+05-01 18:15:23.038  2599  3144 I AppsFilter: interaction: PackageSetting{2ba670e com.ogabassey.store/10230} -> PackageSetting{cb182c com.signbridge/10238} BLOCKED
+05-01 18:15:23.038  2599  3144 I AppsFilter: interaction: PackageSetting{798552f com.ogabassey.baci/10224} -> PackageSetting{cb182c com.signbridge/10238} BLOCKED
+05-01 18:15:23.038  2896  2967 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=false, height=495
+05-01 18:15:23.046  2599  3144 V WindowManager: Defer transition id=53 for TaskFragmentTransaction=android.os.Binder@5dee2f5
+05-01 18:15:23.046  2599  3144 V WindowManager: deferTransitionReady deferReadyDepth=1 stack=com.android.server.wm.TransitionController.deferTransitionReady:1061 com.android.server.wm.TaskFragmentOrganizerController$TaskFragmentOrganizerState.dispatchTransaction:517 com.android.server.wm.TaskFragmentOrganizerController.dispatchPendingEvents:1259 com.android.server.wm.TaskFragmentOrganizerController.dispatchPendingEvents:1228 com.android.server.wm.RootWindowContainer.performSurfacePlacement:777 
+05-01 18:15:23.047  3066  3066 D RecentsView: onTaskDisplayChanged: 71, new displayId = 0
+05-01 18:15:23.047  2599  2621 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@33257688 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-01 18:15:23.048  3066  3066 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+05-01 18:15:23.049  2599  3707 V WindowManager: Continue transition id=53 for TaskFragmentTransaction=android.os.Binder@5dee2f5
+05-01 18:15:23.049  2599  2848 D BackgroundInstallControlService: Package event received: 0
+05-01 18:15:23.049  2896  2967 D ShellDesktopMode: DesktopRepository: Removes freeform task: taskId=70
+05-01 18:15:23.050  2896  2967 W ShellDesktopMode: DesktopRepository: No display id found for task: taskId=70
+05-01 18:15:23.050  3066  3066 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+05-01 18:15:23.055  2599  3707 V WindowManager: continueTransitionReady deferReadyDepth=0 stack=com.android.server.wm.TransitionController.continueTransitionReady:1071 com.android.server.wm.TaskFragmentOrganizerController$TaskFragmentOrganizerState.onTransactionFinished:546 com.android.server.wm.TaskFragmentOrganizerController.onTransactionHandled:740 android.window.ITaskFragmentOrganizerController$Stub.onTransact:225 android.os.Binder.execTransactInternal:1473 
+05-01 18:15:23.065  2526  2526 D Zygote  : Forked child process 14203
+05-01 18:15:23.066  2599  2684 I ActivityManager: Start proc 14203:com.signbridge/u0a238 for next-top-activity {com.signbridge/com.signbridge.MainActivity}
+05-01 18:15:23.066  2528 10476 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:23.078  3066  3066 D BaseActivity: Launcher flags updated: [state_started] -[state_window_focused]
+05-01 18:15:23.079 14203 14203 I Zygote  : Process 14203 created for com.signbridge
+05-01 18:15:23.080 14203 14203 I com.signbridge: Late-enabling -Xcheck:jni
+05-01 18:15:23.087  2599  2618 V WindowManager: Sent Transition (#53) createdAt=05-01 18:15:23.031 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=71 effectiveUid=10238 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.signbridge/.MainActivity } baseActivity=ComponentInfo{com.signbridge/com.signbridge.MainActivity} topActivity=ComponentInfo{com.signbridge/com.signbridge.MainActivity} origActivity=null realActivity=ComponentInfo{com.signbridge/com.signbridge.MainActivity} numActivities=1 lastActiveTime=6105534 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{3ef7365 Task{6be3c00 #71 type=standard A=10238:com.signbridge}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{73b183a com.signbridge.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 53 }
+05-01 18:15:23.087  2599  2618 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+05-01 18:15:23.087  2599  2618 V WindowManager:     info={id=53 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+05-01 18:15:23.087  2599  2618 V WindowManager:         {WCT{RemoteToken{3ef7365 Task{6be3c00 #71 type=standard A=10238:com.signbridge}}} m=OPEN f=NONE leash=Surface(name=Task=71#719)/@0xaf032cf sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+05-01 18:15:23.087  2599  2618 V WindowManager:         {WCT{RemoteToken{e625e3 Task{1ff2bd0 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1#131)/@0x8e7ebac sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+05-01 18:15:23.087  2599  2618 V WindowManager:         {m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d1eaf57}#147)/@0xc9a855f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}
+05-01 18:15:23.087  2599  2618 V WindowManager:     ]}
+05-01 18:15:23.088  2896  3099 V WindowManagerShell: onTransitionReady(transaction=11162620007070)
+05-01 18:15:23.088  2896  2967 V WindowManagerShell: onTransitionReady (#53) android.os.BinderProxy@37c0be1: {id=53 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+05-01 18:15:23.088  2896  2967 V WindowManagerShell:         {m=OPEN f=NONE leash=Surface(name=Task=71#719)/@0x4bb1a9a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+05-01 18:15:23.088  2896  2967 V WindowManagerShell:         {m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1#131)/@0x2e16fcb sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+05-01 18:15:23.088  2896  2967 V WindowManagerShell:         {m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d1eaf57}#147)/@0xc0ea3a8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}
+05-01 18:15:23.088  2896  2967 V WindowManagerShell:     ]}
+05-01 18:15:23.089  2896  2967 V WindowManagerShell: Playing animation for (#53) android.os.BinderProxy@37c0be1@0
+05-01 18:15:23.090  2896  2967 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+05-01 18:15:23.090  2896  2967 V ShellDesktopMode: DesktopMixedTransitionHandler: No pending desktop transition
+05-01 18:15:23.090  2896  2967 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=53 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=71#719)/@0x4bb1a9a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1#131)/@0x2e16fcb sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d1eaf57}#147)/@0xc0ea3a8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}]}
+05-01 18:15:23.090  2896  2967 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@b2b4dc windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@d5a39e5, appThread = android.app.IApplicationThread$Stub$Proxy@92c9cba, debugName = overlayBackTransition }}
+05-01 18:15:23.090  2896  2967 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@19b976b, appThread = android.app.IApplicationThread$Stub$Proxy@f2442c8, debugName = LauncherToDream }}
+05-01 18:15:23.090  2896  2967 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@c77ca86, appThread = android.app.IApplicationThread$Stub$Proxy@85a3f47, debugName = QuickstepLaunchHome }}
+05-01 18:15:23.090  2896  2967 V WindowManagerShell:  Checking filter Pair{{types=[OPEN,TO_FRONT] flags=0x0] notFlags=0x0 checks=[{atype=standard independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=freeform isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@55bf5ad, appThread = null, debugName = DesktopWindowLimitUnminimize }}
+05-01 18:15:23.090  2896  2967 V WindowManagerShell:  Delegate animation for (#53) to null
+05-01 18:15:23.090  2896  2967 V WindowManagerShell: start default transition animation, info = {id=53 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=71#719)/@0x4bb1a9a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1#131)/@0x2e16fcb sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d1eaf57}#147)/@0xc0ea3a8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}]}
+05-01 18:15:23.090  2896  2967 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@4a04666 animAttr=0x13 type=OPEN isEntrance=false
+05-01 18:15:23.091  2896  2967 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@c7e5254 animAttr=0x12 type=OPEN isEntrance=true
+05-01 18:15:23.095  2896  2967 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@2381992
+05-01 18:15:23.095  2896  2967 V ShellTaskOrganizer: Task appeared taskId=71 listener=FullscreenTaskListener
+05-01 18:15:23.095  2896  2967 V ShellTaskOrganizer: Fullscreen Task Appeared: #71
+05-01 18:15:23.114  3066  3066 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+05-01 18:15:23.116 14203 14203 I com.signbridge: Using CollectorTypeCMC GC.
+05-01 18:15:23.119   563   621 I adbd    : jdwp connection from 14203
+05-01 18:15:23.132 14203 14203 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-01 18:15:23.148  3066  3066 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+05-01 18:15:23.153  2599  2848 D BackgroundInstallControlService: Package event received: 0
+05-01 18:15:23.168  2599  3694 W WindowManager: takeTaskSnapshot: taskId=50 not found or not visible
+05-01 18:15:23.187 14203 14203 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+05-01 18:15:23.187 14203 14203 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+05-01 18:15:23.406  2896  2967 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#53) android.os.BinderProxy@37c0be1@0
+05-01 18:15:23.410  2599  2618 V WindowManager: Finish Transition (#53): created at 05-01 18:15:23.031 collect-started=0.014ms request-sent=4.211ms started=5.708ms ready=54.229ms sent=55.578ms commit=21.189ms finished=378.486ms
+05-01 18:15:23.411  2896  2967 V WindowManagerShell: Track 0 became idle
+05-01 18:15:23.411  2896  2967 V WindowManagerShell: All active transition animations finished
+05-01 18:15:23.411  3066  3066 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-01 18:15:23.411  2896  3196 D WallpaperService: onVisibilityChanged(false): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@a55e8a6
+05-01 18:15:23.412 14203 14203 D nativeloader: Configuring clns-9 for other apk /data/app/~~8QQ5iPi6WHBhaXDWXqP_Cg==/com.signbridge-KeWfXFilsrNyVgYxRR94wg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~8QQ5iPi6WHBhaXDWXqP_Cg==/com.signbridge-KeWfXFilsrNyVgYxRR94wg==/lib/arm64:/data/app/~~8QQ5iPi6WHBhaXDWXqP_Cg==/com.signbridge-KeWfXFilsrNyVgYxRR94wg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.signbridge
+05-01 18:15:23.423  3066  3066 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+05-01 18:15:23.424 14203 14203 V GraphicsEnvironment: Currently set values for:
+05-01 18:15:23.424 14203 14203 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+05-01 18:15:23.424 14203 14203 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+05-01 18:15:23.424 14203 14203 V GraphicsEnvironment: com.signbridge is not listed in per-application setting
+05-01 18:15:23.424 14203 14203 V GraphicsEnvironment: ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+05-01 18:15:23.424 14203 14203 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+05-01 18:15:23.424 14203 14203 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+05-01 18:15:23.470  2599  2848 D BackgroundInstallControlService: Package event received: 0
+05-01 18:15:23.470  2599  2848 D BackgroundInstallControlService: Package event received: 0
+05-01 18:15:23.470 14203 14219 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+05-01 18:15:23.485 14203 14203 D DesktopExperienceFlags: Toggle override initialized to: false
+05-01 18:15:23.494 14203 14203 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+05-01 18:15:23.502 14203 14219 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+05-01 18:15:23.502 14203 14219 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+05-01 18:15:23.510 14203 14219 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+05-01 18:15:23.510 14203 14219 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+05-01 18:15:23.512 14203 14203 D CompatChangeReporter: Compat change id reported: 377864165; UID 10238; state: ENABLED
+05-01 18:15:23.513 14203 14203 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+05-01 18:15:23.575 14203 14203 W HWUI    : Unknown dataspace 0
+05-01 18:15:23.589 14203 14203 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@4987e23
+05-01 18:15:23.589  2599  3694 D CoreBackPreview: Window{ad7c0bc u0 com.signbridge/com.signbridge.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@ee57ccb, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+05-01 18:15:24.039 14203 14203 W com.signbridge: Verification of androidx.compose.ui.graphics.colorspace.Connector androidx.compose.ui.graphics.colorspace.ColorSpaceKt.createConnector-YBCOT_4(androidx.compose.ui.graphics.colorspace.ColorSpace, androidx.compose.ui.graphics.colorspace.ColorSpace, int) took 222.194ms (319.54 bytecodes/s) (0B arena alloc)
+05-01 18:15:24.445 14203 14203 W com.signbridge: Verification of void androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat.addExtraDataToAccessibilityNodeInfoHelper(int, androidx.core.view.accessibility.AccessibilityNodeInfoCompat, java.lang.String, android.os.Bundle) took 329.056ms (2953.90 bytecodes/s) (0B arena alloc)
+05-01 18:15:25.032  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:25.045 14203 14203 I com.signbridge: hiddenapi: Accessing hidden method Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/compose/ui/platform/AndroidComposeView$Companion; (domain=app, TargetSdkVersion=36) using reflection: allowed
+05-01 18:15:25.132 14203 14203 I TextToSpeech: Sucessfully bound to com.google.android.tts
+05-01 18:15:25.133  2599  3694 D TextToSpeechManagerPerUserService: Trying to start connection to TTS engine: com.google.android.tts
+05-01 18:15:25.138  2599  2848 D BackgroundInstallControlService: Package event received: 0
+05-01 18:15:25.160  2599  2599 D ActivityManager: sync unfroze 4522 com.google.android.tts for 6
+05-01 18:15:25.162  2599  2848 D BackgroundInstallControlService: Package event received: 0
+05-01 18:15:25.177  3457  3470 I egip    : (REDACTED) appOpsListener %s %s
+05-01 18:15:25.177  3457  3470 I egip    : (REDACTED) Ignoring irrelevant audio permission changes for package %s
+05-01 18:15:25.205 14203 14208 I com.signbridge: Compiler allocated 5155KB to compile void android.view.ViewRootImpl.performTraversals()
+05-01 18:15:25.237  4522  4522 I GoogleTtsServicePeer: Creating Google TTS service, version googletts.google-speech-apk_20260316.02_p0.884694279
+05-01 18:15:25.243  4522  4522 I ExoPlayerImpl: Init 13f7bd [AndroidXMedia3/1.10.0-rc02] [emu64a, sdk_gphone64_arm64, Google, 36]
+05-01 18:15:25.257 14203 14203 D VRI[MainActivity]: WindowInsets changed: 1080x2400 statusBars:[0,63,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,63,0,84] 
+05-01 18:15:25.266  4522  4522 I ExoPlayerImpl: Init 72a41b2 [AndroidXMedia3/1.10.0-rc02] [emu64a, sdk_gphone64_arm64, Google, 36]
+05-01 18:15:25.270  4522  4522 I VoiceDataManager: checkData: Refreshing list of all available voices...
+05-01 18:15:25.281 14203 14203 I HWUI    : Using FreeType backend (prop=Auto)
+05-01 18:15:25.290  4522  4689 I VoiceDataDownloader: getAvailableVoicesInfo en-us
+05-01 18:15:25.291  4522  4689 I VoiceGenerator: Cache cleared
+05-01 18:15:25.291  4522  4689 I VoiceDataManager: Calling onVoicesDataChange: updated voices
+05-01 18:15:25.291  4522  4689 I VoiceDataManager: Calling onVoicesDataChange: updated voices
+05-01 18:15:25.291  4522  4689 I VoiceDataManager: Calling onVoicesDataChange: updated voices
+05-01 18:15:25.291  4522  4689 I VoiceDataManager: Calling onVoicesDataChange: updated voices
+05-01 18:15:25.291  4522  4689 I VoiceDataManager: Calling onVoicesDataChange: updated voices
+05-01 18:15:25.291  4522  4689 I VoiceDataManager: Calling onVoicesDataChange: updated voices
+05-01 18:15:25.291  4522  4689 I VoiceDataManager: Calling onVoicesDataChange: updated voices
+05-01 18:15:25.291  4522  4689 I VoiceDataManager: Calling onVoicesDataChange: updated voices
+05-01 18:15:25.291  4522  4689 I VoiceDataManager: Calling onVoicesDataChange: updated voices
+05-01 18:15:25.291  4522  4689 I VoiceDataManager: Calling onVoicesDataChange: updated voices
+05-01 18:15:25.359 14203 14203 D nativeloader: Load libstats_jni.so using APEX ns com_android_os_statsd for caller /apex/com.android.os.statsd/javalib/framework-statsd.jar: ok
+05-01 18:15:25.451 14203 14203 I Choreographer: Skipped 106 frames!  The application may be doing too much work on its main thread.
+05-01 18:15:25.456  2599  2618 I ActivityTaskManager: Displayed com.signbridge/.MainActivity for user 0: +2s421ms
+05-01 18:15:25.461 14203 14214 I HWUI    : Davey! duration=1971ms; Flags=1, FrameTimelineVsyncId=123125, IntendedVsync=6105971506505, Vsync=6106071506501, InputEventId=0, HandleInputStart=6106086742368, AnimationStart=6106086745702, PerformTraversalsStart=6106086890910, DrawStart=6107884409994, FrameDeadline=6105988173171, FrameStartTime=6106086326618, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=6107899097119, SyncStart=6107899420244, IssueDrawCommandsStart=6107899763911, SwapBuffers=6107924987702, FrameCompleted=6107943532411, DequeueBufferDuration=3792, QueueBufferDuration=871583, GpuCompleted=6107943467161, SwapBuffersCompleted=6107943532411, DisplayPresentTime=0, CommandSubmissionCompleted=6107924987702, 
+05-01 18:15:25.472  2599  2621 W ProcessStats: Tracking association SourceState{37340e8 system/1000 BFgs #62390} whose proc state 4 is better than process ProcessState{d7996d0 com.google.android.tts/10165 pkg=com.google.android.tts} proc state 14 (33 skipped)
+05-01 18:15:25.490  2599  2760 I ImeTracker: com.signbridge:5e5c082a: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+05-01 18:15:25.492 14203 14203 D InsetsController: hide(ime())
+05-01 18:15:25.492 14203 14203 I ImeTracker: com.signbridge:5e5c082a: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+05-01 18:15:25.494  3066  3066 D BaseActivity: Launcher flags updated: [] -[state_started]
+05-01 18:15:25.495  3066  3066 D BaseDepthController: setSurface:
+05-01 18:15:25.495  3066  3066 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+05-01 18:15:25.495  3066  3066 D BaseDepthController: 	mBaseSurface: null
+05-01 18:15:25.495  3066  3066 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+05-01 18:15:25.500  3066  3066 D LauncherStateManager: StateManager.goToState: fromState: Normal, toState: Normal, partial trace:
+05-01 18:15:25.500  3066  3066 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:6)
+05-01 18:15:25.500  3066  3066 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:2)
+05-01 18:15:25.500  3066  3066 D LauncherStateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:32)
+05-01 18:15:25.501  3066  3066 D LauncherStateManager: StateManager.onRepeatStateSetAborted: state: Normal
+05-01 18:15:25.502  4139  4242 I FontLog : (REDACTED) Received query %s, URI %s
+05-01 18:15:25.504  3066  3066 D ActivityContext: hideKeyboard
+05-01 18:15:25.504  4139  4242 I FontLog : (REDACTED) Query [%s] resolved to %s
+05-01 18:15:25.512  4139  4242 I FontLog : (REDACTED) Fetch %s end status %s
+05-01 18:15:25.512  4522  4522 I LocalSynthesizer: Attempting to load synthesizer for voice: en-us-x-iog-seanet-embedded
+05-01 18:15:25.512  4522  4522 I LocalSynthesizer: Voice en-us-x-iog-seanet-embedded is not supported by any existing synthesizers.
+05-01 18:15:25.512  4522  4522 I ComposerWrapperImpl: Initializing new monolithic pipeline. New voice: en-us-x-iog-seanet-embedded
+05-01 18:15:25.512  4522  4522 I PipelineReaderImpl: Initializing monolithic pipeline from disk: /data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/pipeline.pb
+05-01 18:15:25.513  3066  3066 D ActivityContext: isImeShown: false
+05-01 18:15:25.515  3066  3066 D StatsLog: LAUNCHER_ONSTOP
+05-01 18:15:25.519  4139  4261 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+05-01 18:15:25.519  3066  3066 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+05-01 18:15:25.521  3342  3342 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2186 
+05-01 18:15:25.521  2599  2884 I ImeTracker: system_server:5ae06960: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false
+05-01 18:15:25.522  2599  2621 I ImeTracker: system_server:5ae06960: onCancelled at PHASE_SERVER_SHOULD_HIDE
+05-01 18:15:25.524  4522  4522 I native  : I0000 00:00:1777655725.524194    4522 android_resource_loader.cc:109] Loading resources for en_us_x_embedded_havoc/12200944599972786779
+05-01 18:15:25.525  4139  4261 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+05-01 18:15:25.525  4522  4522 I native  : I0000 00:00:1777655725.525608    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/burdock_frame_config.pb" (as: FILE) ...
+05-01 18:15:25.525  4522  4522 I native  : I0000 00:00:1777655725.525895    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/burdock_frame_config.pb" of size 68
+05-01 18:15:25.525  3342  3342 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-01 18:15:25.528  3342  3342 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1444 onStartInput(EditorInfo{EditorInfo{packageName=com.signbridge, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-01 18:15:25.530  2599  2848 D BackgroundInstallControlService: Package event received: 0
+05-01 18:15:25.531  3342  3342 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():321 Update input view padding, isNavbarOverInputWindow=true, bottom inset=126
+05-01 18:15:25.534  3342  3342 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-01 18:15:25.545  4522  4522 I native  : I0000 00:00:1777655725.545179    4522 android_resource_loader.cc:100] Built resource acoustic_frame_config
+05-01 18:15:25.545  4522  4522 I native  : I0000 00:00:1777655725.545499    4522 android_resource_loader.cc:116] Loaded resource:acoustic_frame_config
+05-01 18:15:25.546  4522  4522 I native  : I0000 00:00:1777655725.546083    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/affixes_en_us_android.far" (as: FILE) ...
+05-01 18:15:25.546  4522  4522 I native  : I0000 00:00:1777655725.546253    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/affixes_en_us_android.far" of size 36782
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549393    4522 android_resource_loader.cc:100] Built resource affix_word_splitter_grm
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549456    4522 android_resource_loader.cc:116] Loaded resource:affix_word_splitter_grm
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549546    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/affixes_params_en_us.pb" (as: FILE) ...
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549595    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/affixes_params_en_us.pb" of size 420
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549852    4522 affix_word_splitter_data.cc:33] Ambiguous affix entries for spelling ['s] -- their grammars should disambiguate them.
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549884    4522 affix_word_splitter_data.cc:33] Ambiguous affix entries for spelling ['s] -- their grammars should disambiguate them.
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549911    4522 affix_word_splitter_data.cc:33] Ambiguous affix entries for spelling ['s] -- their grammars should disambiguate them.
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549931    4522 affix_word_splitter_data.cc:33] Ambiguous affix entries for spelling [s] -- their grammars should disambiguate them.
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549941    4522 affix_word_splitter_data.cc:33] Ambiguous affix entries for spelling [s] -- their grammars should disambiguate them.
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549947    4522 affix_word_splitter_data.cc:33] Ambiguous affix entries for spelling [s] -- their grammars should disambiguate them.
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549965    4522 affix_word_splitter_data.cc:33] Ambiguous affix entries for spelling [ed] -- their grammars should disambiguate them.
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549973    4522 affix_word_splitter_data.cc:33] Ambiguous affix entries for spelling [ed] -- their grammars should disambiguate them.
+05-01 18:15:25.549  4522  4522 I native  : I0000 00:00:1777655725.549978    4522 affix_word_splitter_data.cc:33] Ambiguous affix entries for spelling [ed] -- their grammars should disambiguate them.
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550016    4522 affix_word_splitter_data.cc:89] Loaded affixes in [/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/affixes_params_en_us.pb].
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550076    4522 android_resource_loader.cc:100] Built resource affix_word_splitter
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550254    4522 android_resource_loader.cc:116] Loaded resource:affix_word_splitter
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550274    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/roman_numeral_android.far" (as: FILE) ...
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550289    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/roman_numeral_android.far" of size 5112
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550606    4522 android_resource_loader.cc:100] Built resource classify_roman_numerals_grm_fst
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550625    4522 android_resource_loader.cc:116] Loaded resource:classify_roman_numerals_grm_fst
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550635    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/en_us_pronounce.far" (as: FILE) ...
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550654    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/en_us_pronounce.far" of size 5040
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550807    4522 android_resource_loader.cc:100] Built resource compound_pronounce_grm_fst
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550826    4522 android_resource_loader.cc:116] Loaded resource:compound_pronounce_grm_fst
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550918    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/disambiguation_rules_en_us.pb" (as: FILE) ...
+05-01 18:15:25.550  4522  4522 I native  : I0000 00:00:1777655725.550941    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/disambiguation_rules_en_us.pb" of size 317147
+05-01 18:15:25.553  2599  2884 W PackageConfigPersister: App-specific configuration not found for packageName: com.signbridge and userId: 0
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608162    4522 android_resource_loader.cc:100] Built resource disambiguation_rules
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608303    4522 android_resource_loader.cc:116] Loaded resource:disambiguation_rules
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608403    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/engine_config_en_us_x_embedded_havoc.pb" (as: FILE) ...
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608450    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/engine_config_en_us_x_embedded_havoc.pb" of size 54
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608593    4522 android_resource_loader.cc:100] Built resource engine_config
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608602    4522 android_resource_loader.cc:116] Loaded resource:engine_config
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608674    4522 android_resource_loader.cc:100] Built resource guided_synthesis
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608698    4522 android_resource_loader.cc:116] Loaded resource:guided_synthesis
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608709    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/mapping_grammar_en.far" (as: FILE) ...
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608724    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/mapping_grammar_en.far" of size 863
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608841    4522 android_resource_loader.cc:100] Built resource homograph_mapping_grammar
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608856    4522 android_resource_loader.cc:116] Loaded resource:homograph_mapping_grammar
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608920    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/lettuce_model.fb" (as: MEMORY) ...
+05-01 18:15:25.608  4522  4522 I native  : I0000 00:00:1777655725.608972    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/lettuce_model.fb" of size 2100680
+05-01 18:15:25.609  4522  4522 I native  : I0000 00:00:1777655725.609579    4522 android_resource_loader.cc:100] Built resource lettuce_model_resource
+05-01 18:15:25.609  4522  4522 I native  : I0000 00:00:1777655725.609604    4522 android_resource_loader.cc:116] Loaded resource:lettuce_model_resource
+05-01 18:15:25.609  4522  4522 I native  : I0000 00:00:1777655725.609617    4522 android_resource_loader.cc:100] Built resource lettuce_model_scorer
+05-01 18:15:25.609  4522  4522 I native  : I0000 00:00:1777655725.609624    4522 android_resource_loader.cc:116] Loaded resource:lettuce_model_scorer
+05-01 18:15:25.609  4522  4522 I native  : I0000 00:00:1777655725.609633    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/lettuce_classify_embedded_us_generated_android.far" (as: FILE) ...
+05-01 18:15:25.609  4522  4522 I native  : I0000 00:00:1777655725.609671    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/lettuce_classify_embedded_us_generated_android.far" of size 4439801
+05-01 18:15:25.636  4522  4522 I native  : I0000 00:00:1777655725.636821    4522 android_resource_loader.cc:100] Built resource lettuce_node_generator_grm
+05-01 18:15:25.636  4522  4522 I native  : I0000 00:00:1777655725.636902    4522 android_resource_loader.cc:116] Loaded resource:lettuce_node_generator_grm
+05-01 18:15:25.636  4522  4522 I native  : I0000 00:00:1777655725.636919    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/lucid_collection_android.far" (as: FILE) ...
+05-01 18:15:25.636  4522  4522 I native  : I0000 00:00:1777655725.636961    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/lucid_collection_android.far" of size 306120
+05-01 18:15:25.638  4522  4522 I native  : I0000 00:00:1777655725.638904    4522 android_resource_loader.cc:100] Built resource lucid_parser_grm_fst
+05-01 18:15:25.638  4522  4522 I native  : I0000 00:00:1777655725.638944    4522 android_resource_loader.cc:116] Loaded resource:lucid_parser_grm_fst
+05-01 18:15:25.638  4522  4522 I native  : I0000 00:00:1777655725.638990    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/markup_triggers.pb" (as: FILE) ...
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639015    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/markup_triggers.pb" of size 930
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639136    4522 android_resource_loader.cc:100] Built resource markup_triggers
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639166    4522 android_resource_loader.cc:116] Loaded resource:markup_triggers
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639188    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/morphosyntactic_mapping.pb" (as: FILE) ...
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639201    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/morphosyntactic_mapping.pb" of size 6
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639246    4522 android_resource_loader.cc:100] Built resource morph_analyzer_attribute_map
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639310    4522 android_resource_loader.cc:116] Loaded resource:morph_analyzer_attribute_map
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639440    4522 android_resource_loader.cc:100] Built resource multilingual_capabilities
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639474    4522 android_resource_loader.cc:116] Loaded resource:multilingual_capabilities
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639527    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/en_us_phonology.pb" (as: FILE) ...
+05-01 18:15:25.639  4522  4522 I native  : I0000 00:00:1777655725.639560    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/en_us_phonology.pb" of size 2196
+05-01 18:15:25.640  4522  4522 W native  : W0000 00:00:1777655725.640618    4522 phonology.cc:80] Phonemes l, r\ have non-distinctive features. See b/111971558.
+05-01 18:15:25.640  4522  4522 W native  : W0000 00:00:1777655725.640684    4522 phonology.cc:80] Phonemes @, @` have non-distinctive features. See b/111971558.
+05-01 18:15:25.641  4522  4522 I native  : I0000 00:00:1777655725.641150    4522 android_resource_loader.cc:100] Built resource phonology
+05-01 18:15:25.641  4522  4522 I native  : I0000 00:00:1777655725.641174    4522 android_resource_loader.cc:116] Loaded resource:phonology
+05-01 18:15:25.641  4522  4522 I native  : I0000 00:00:1777655725.641975    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/en_morphology" (as: FILE) ...
+05-01 18:15:25.642  4522  4522 I native  : I0000 00:00:1777655725.642046    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/en_morphology" of size 2753822
+05-01 18:15:25.650  4522  4522 I native  : I0000 00:00:1777655725.650292    4522 model-api.cc:46] Registered model under key morphology
+05-01 18:15:25.654  4522  4522 I native  : I0000 00:00:1777655725.654720    4522 android_resource_loader.cc:100] Built resource analyze_morphology_saft_portable_algo
+05-01 18:15:25.654  4522  4522 I native  : I0000 00:00:1777655725.654785    4522 android_resource_loader.cc:116] Loaded resource:analyze_morphology_saft_portable_algo
+05-01 18:15:25.654  4522  4522 I native  : I0000 00:00:1777655725.654860    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/ipa_to_tts_to-en_us.far" (as: FILE) ...
+05-01 18:15:25.654  4522  4522 I native  : I0000 00:00:1777655725.654903    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/ipa_to_tts_to-en_us.far" of size 465858
+05-01 18:15:25.657  4522  4522 I native  : I0000 00:00:1777655725.657142    4522 android_resource_loader.cc:100] Built resource ipa_to_tts_phoneme_mapper
+05-01 18:15:25.657  4522  4522 I native  : I0000 00:00:1777655725.657204    4522 android_resource_loader.cc:116] Loaded resource:ipa_to_tts_phoneme_mapper
+05-01 18:15:25.657  4522  4522 I native  : I0000 00:00:1777655725.657380    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/en_us.hlex.bin" (as: MEMORY) ...
+05-01 18:15:25.657  4522  4522 I native  : I0000 00:00:1777655725.657409    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/en_us.hlex.bin" of size 5117760
+05-01 18:15:25.658  4522  4522 I native  : I0000 00:00:1777655725.658258    4522 android_resource_loader.cc:100] Built resource lexicon
+05-01 18:15:25.658  4522  4522 I native  : I0000 00:00:1777655725.658382    4522 android_resource_loader.cc:116] Loaded resource:lexicon
+05-01 18:15:25.658  4522  4522 I native  : I0000 00:00:1777655725.658417    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/homographs_model_en_us_embedded.bin" (as: MEMORY) ...
+05-01 18:15:25.658  4522  4522 I native  : I0000 00:00:1777655725.658449    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/homographs_model_en_us_embedded.bin" of size 399120
+05-01 18:15:25.664  4522  4522 I native  : I0000 00:00:1777655725.664436    4522 android_resource_loader.cc:100] Built resource homograph_classifier_model_resource
+05-01 18:15:25.664  4522  4522 I native  : I0000 00:00:1777655725.664497    4522 android_resource_loader.cc:116] Loaded resource:homograph_classifier_model_resource
+05-01 18:15:25.664  4522  4522 I native  : I0000 00:00:1777655725.664522    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/lettuce_node_generator_params_embedded_us_runtime.pb" (as: FILE) ...
+05-01 18:15:25.664  4522  4522 I native  : I0000 00:00:1777655725.664560    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/lettuce_node_generator_params_embedded_us_runtime.pb" of size 2599
+05-01 18:15:25.829  2528 10453 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:25.949  4522  4522 I native  : I0000 00:00:1777655725.949136    4522 exl_node_generator.cc:58] Setting legal word grammar as macro_only: true
+05-01 18:15:25.949  4522  4522 I native  : I0000 00:00:1777655725.949564    4522 android_resource_loader.cc:100] Built resource lettuce_node_generator
+05-01 18:15:25.949  4522  4522 I native  : I0000 00:00:1777655725.949666    4522 android_resource_loader.cc:116] Loaded resource:lettuce_node_generator
+05-01 18:15:25.949  4522  4522 I native  : I0000 00:00:1777655725.949734    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/burdock_model.params.pb" (as: FILE) ...
+05-01 18:15:25.949  4522  4522 I native  : I0000 00:00:1777655725.949826    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/burdock_model.params.pb" of size 8875
+05-01 18:15:25.953  4522  4522 I native  : I0000 00:00:1777655725.953774    4522 android_resource_loader.cc:100] Built resource lstm_add_specification_resource
+05-01 18:15:25.953  4522  4522 I native  : I0000 00:00:1777655725.953825    4522 android_resource_loader.cc:116] Loaded resource:lstm_add_specification_resource
+05-01 18:15:25.953  4522  4522 I native  : I0000 00:00:1777655725.953859    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/chive_model_fused.pb" (as: FILE) ...
+05-01 18:15:25.953  4522  4522 I native  : I0000 00:00:1777655725.953898    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/chive_model_fused.pb" of size 1281
+05-01 18:15:25.954  4522  4522 I native  : I0000 00:00:1777655725.954138    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/burdock_valerian_model.tflite" (as: MEMORY) ...
+05-01 18:15:25.954  4522  4522 I native  : I0000 00:00:1777655725.954209    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/burdock_valerian_model.tflite" of size 1790608
+05-01 18:15:25.955  4522  4522 E tflite  : third_party/tensorflow/lite/core/subgraph.cc:1084 tensor.data.raw != nullptr was not true.
+05-01 18:15:25.955  4522  4522 I native  : I0000 00:00:1777655725.955047    4522 chive_inference_resource.cc:234] Creating new CHiVE model [model graph]: 
+05-01 18:15:25.955  4522  4522 I native  : I0000 00:00:1777655725.955053    4522 chive_model.cc:179] Creating a single pass CHiVE model
+05-01 18:15:25.955  4522  4522 I native  : I0000 00:00:1777655725.955676    4522 android_resource_loader.cc:100] Built resource chive_inference_config
+05-01 18:15:25.955  4522  4522 I native  : I0000 00:00:1777655725.955706    4522 android_resource_loader.cc:116] Loaded resource:chive_inference_config
+05-01 18:15:25.955  4522  4522 I native  : I0000 00:00:1777655725.955717    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/converter_en_us_android.far" (as: FILE) ...
+05-01 18:15:25.955  4522  4522 I native  : I0000 00:00:1777655725.955736    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/converter_en_us_android.far" of size 1473
+05-01 18:15:25.955  4522  4522 I native  : I0000 00:00:1777655725.955850    4522 android_resource_loader.cc:100] Built resource pron_buffet_to_tts_converter
+05-01 18:15:25.955  4522  4522 I native  : I0000 00:00:1777655725.955871    4522 android_resource_loader.cc:116] Loaded resource:pron_buffet_to_tts_converter
+05-01 18:15:25.955  4522  4522 I native  : I0000 00:00:1777655725.955885    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/regexp_rewrite_embedded.pb" (as: FILE) ...
+05-01 18:15:25.955  4522  4522 I native  : I0000 00:00:1777655725.955891    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/regexp_rewrite_embedded.pb" of size 6025
+05-01 18:15:25.956  4522  4522 I native  : I0000 00:00:1777655725.956024    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/punctuation.pb" (as: FILE) ...
+05-01 18:15:25.956  4522  4522 I native  : I0000 00:00:1777655725.956060    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/punctuation.pb" of size 452
+05-01 18:15:25.990  4522  4522 E native  : E0000 00:00:1777655725.990425    4522 re2.cc:250] Error parsing '^|[^\p{Letter}\\]': invalid character class range: \p{Letter}
+05-01 18:15:25.990  4522  4522 E native  : E0000 00:00:1777655725.990492    4522 replacement_rule.cc:40] Invalid context regexp: invalid character class range: \p{Letter}
+05-01 18:15:25.990  4522  4522 E native  : E0000 00:00:1777655725.990507    4522 replacement_rule.cc:151] Error creating replacement rule.
+05-01 18:15:25.990  4522  4522 E native  : E0000 00:00:1777655725.990517    4522 regexp_rewriter.cc:35] Error creating rule MessageLite at 0xb400007af102b570.
+05-01 18:15:25.990  4522  4522 I native  : I0000 00:00:1777655725.990797    4522 android_resource_loader.cc:100] Built resource rewrite_algo
+05-01 18:15:25.990  4522  4522 I native  : I0000 00:00:1777655725.990881    4522 android_resource_loader.cc:116] Loaded resource:rewrite_algo
+05-01 18:15:25.990  4522  4522 I native  : I0000 00:00:1777655725.990927    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/roman_numeral_contexts.pb" (as: FILE) ...
+05-01 18:15:25.990  4522  4522 I native  : I0000 00:00:1777655725.990978    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/roman_numeral_contexts.pb" of size 9114
+05-01 18:15:25.991  4522  4522 I native  : I0000 00:00:1777655725.991116    4522 android_resource_loader.cc:100] Built resource roman_numeral_context_words
+05-01 18:15:25.991  4522  4522 I native  : I0000 00:00:1777655725.991156    4522 android_resource_loader.cc:116] Loaded resource:roman_numeral_context_words
+05-01 18:15:25.991  4522  4522 I native  : I0000 00:00:1777655725.991368    4522 android_resource_loader.cc:100] Built resource classify_roman_numerals_grm_algo
+05-01 18:15:25.991  4522  4522 I native  : I0000 00:00:1777655725.991459    4522 android_resource_loader.cc:116] Loaded resource:classify_roman_numerals_grm_algo
+05-01 18:15:25.991  4522  4522 I native  : I0000 00:00:1777655725.991498    4522 android_resource_loader.cc:100] Built resource runtime_override
+05-01 18:15:25.991  4522  4522 I native  : I0000 00:00:1777655725.991503    4522 android_resource_loader.cc:116] Loaded resource:runtime_override
+05-01 18:15:25.991  4522  4522 I native  : I0000 00:00:1777655725.991512    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/seanet_model_options.pb" (as: FILE) ...
+05-01 18:15:25.991  4522  4522 I native  : I0000 00:00:1777655725.991522    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/seanet_model_options.pb" of size 32
+05-01 18:15:25.991  4522  4522 I native  : I0000 00:00:1777655725.991542    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/seanet_model.tflite" (as: FILE) ...
+05-01 18:15:25.991  4522  4522 I native  : I0000 00:00:1777655725.991548    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/seanet_model.tflite" of size 2786320
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996156    4522 android_resource_loader.cc:100] Built resource seanet_enhancer
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996220    4522 android_resource_loader.cc:116] Loaded resource:seanet_enhancer
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996250    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/sb_model.bin" (as: MEMORY) ...
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996298    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/sb_model.bin" of size 48272
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996340    4522 android_resource_loader.cc:100] Built resource sentence_boundary_model_resource
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996366    4522 android_resource_loader.cc:116] Loaded resource:sentence_boundary_model_resource
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996404    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/en_verbalize_spec.pb" (as: FILE) ...
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996424    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/en_verbalize_spec.pb" of size 3984
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996511    4522 android_resource_loader.cc:100] Built resource serialization_spec
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996540    4522 android_resource_loader.cc:116] Loaded resource:serialization_spec
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996565    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/textnorm_params_embedded_en_us.pb" (as: FILE) ...
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996585    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/textnorm_params_embedded_en_us.pb" of size 321
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996662    4522 android_resource_loader.cc:100] Built resource textnorm_params
+05-01 18:15:25.996  4522  4522 I native  : I0000 00:00:1777655725.996688    4522 android_resource_loader.cc:116] Loaded resource:textnorm_params
+05-01 18:15:25.997  4522  4522 I native  : I0000 00:00:1777655725.997795    4522 android_resource_loader.cc:100] Built resource icu_transliterator_to_latin
+05-01 18:15:25.997  4522  4522 I native  : I0000 00:00:1777655725.997819    4522 android_resource_loader.cc:116] Loaded resource:icu_transliterator_to_latin
+05-01 18:15:25.997  4522  4522 I native  : I0000 00:00:1777655725.997943    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/g2p_m3_syls0_stress0_en-US.fst" (as: FILE) ...
+05-01 18:15:25.997  4522  4522 I native  : I0000 00:00:1777655725.997968    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/g2p_m3_syls0_stress0_en-US.fst" of size 696736
+05-01 18:15:25.997  4522  4522 I native  : I0000 00:00:1777655725.997978    4522 compact_fst.cc:20] Loading FST from "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/g2p_m3_syls0_stress0_en-US.fst" ...
+05-01 18:15:26.171  4522  4522 I native  : I0000 00:00:1777655726.171714    4522 decoder.cc:51] G2P FST loaded (56 graphemes and 41 phonemes).
+05-01 18:15:26.178  4522  4522 I native  : I0000 00:00:1777655726.178878    4522 android_resource_loader.cc:100] Built resource learned_fst_g2p_mapper
+05-01 18:15:26.178  4522  4522 I native  : I0000 00:00:1777655726.178955    4522 android_resource_loader.cc:116] Loaded resource:learned_fst_g2p_mapper
+05-01 18:15:26.178  4522  4522 I native  : I0000 00:00:1777655726.178997    4522 android_resource_loader.cc:100] Built resource spelling_normalizer
+05-01 18:15:26.179  4522  4522 I native  : I0000 00:00:1777655726.179001    4522 android_resource_loader.cc:116] Loaded resource:spelling_normalizer
+05-01 18:15:26.188  4522  4522 I native  : I0000 00:00:1777655726.188934    4522 android_resource_loader.cc:100] Built resource token_resolver_algo
+05-01 18:15:26.189  4522  4522 I native  : I0000 00:00:1777655726.189051    4522 android_resource_loader.cc:116] Loaded resource:token_resolver_algo
+05-01 18:15:26.189  4522  4522 I native  : I0000 00:00:1777655726.189070    4522 android_resource_loader.cc:100] Built resource utf8_utils
+05-01 18:15:26.189  4522  4522 I native  : I0000 00:00:1777655726.189073    4522 android_resource_loader.cc:116] Loaded resource:utf8_utils
+05-01 18:15:26.189  4522  4522 I native  : I0000 00:00:1777655726.189099    4522 android_resource_loader.cc:100] Built resource lexical_classifier
+05-01 18:15:26.189  4522  4522 I native  : I0000 00:00:1777655726.189106    4522 android_resource_loader.cc:116] Loaded resource:lexical_classifier
+05-01 18:15:26.189  4522  4522 I native  : I0000 00:00:1777655726.189150    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/universal_carrier_pigeon_config.binarypb" (as: FILE) ...
+05-01 18:15:26.189  4522  4522 I native  : I0000 00:00:1777655726.189198    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/universal_carrier_pigeon_config.binarypb" of size 52
+05-01 18:15:26.189  4522  4522 I native  : I0000 00:00:1777655726.189483    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/universal_carrier_pigeon_model.tflite" (as: FILE) ...
+05-01 18:15:26.189  4522  4522 I native  : I0000 00:00:1777655726.189521    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/universal_carrier_pigeon_model.tflite" of size 638952
+05-01 18:15:26.191  4522  4522 I native  : I0000 00:00:1777655726.191747    4522 android_resource_loader.cc:100] Built resource carrier_pigeon_algo
+05-01 18:15:26.191  4522  4522 I native  : I0000 00:00:1777655726.191822    4522 android_resource_loader.cc:116] Loaded resource:carrier_pigeon_algo
+05-01 18:15:26.191  4522  4522 I native  : I0000 00:00:1777655726.191871    4522 android_resource_loader.cc:100] Built resource icu_transliterator
+05-01 18:15:26.191  4522  4522 I native  : I0000 00:00:1777655726.191875    4522 android_resource_loader.cc:116] Loaded resource:icu_transliterator
+05-01 18:15:26.191  4522  4522 I native  : I0000 00:00:1777655726.191884    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/variant_overrides_en_us.pb" (as: FILE) ...
+05-01 18:15:26.191  4522  4522 I native  : I0000 00:00:1777655726.191908    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/variant_overrides_en_us.pb" of size 1525
+05-01 18:15:26.192  4522  4522 I native  : I0000 00:00:1777655726.192051    4522 android_resource_loader.cc:100] Built resource variant_overrides
+05-01 18:15:26.192  4522  4522 I native  : I0000 00:00:1777655726.192087    4522 android_resource_loader.cc:116] Loaded resource:variant_overrides
+05-01 18:15:26.192  4522  4522 I native  : I0000 00:00:1777655726.192093    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/variant_selection_model_en_us_embedded.bin" (as: MEMORY) ...
+05-01 18:15:26.192  4522  4522 I native  : I0000 00:00:1777655726.192120    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/variant_selection_model_en_us_embedded.bin" of size 221608
+05-01 18:15:26.192  4522  4522 I native  : I0000 00:00:1777655726.192141    4522 android_resource_loader.cc:100] Built resource variant_selection_model_data_resource
+05-01 18:15:26.192  4522  4522 I native  : I0000 00:00:1777655726.192148    4522 android_resource_loader.cc:116] Loaded resource:variant_selection_model_data_resource
+05-01 18:15:26.194  4522  4522 I native  : I0000 00:00:1777655726.194325    4522 select_variants.cc:128] Word with override has only one variant: her
+05-01 18:15:26.194  4522  4522 I native  : I0000 00:00:1777655726.194424    4522 android_resource_loader.cc:100] Built resource select_variants_algo
+05-01 18:15:26.194  4522  4522 I native  : I0000 00:00:1777655726.194428    4522 android_resource_loader.cc:116] Loaded resource:select_variants_algo
+05-01 18:15:26.194  4522  4522 I native  : I0000 00:00:1777655726.194445    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/us_verbalization_capabilities.pb" (as: FILE) ...
+05-01 18:15:26.194  4522  4522 I native  : I0000 00:00:1777655726.194480    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/us_verbalization_capabilities.pb" of size 5224
+05-01 18:15:26.194  4522  4522 I native  : I0000 00:00:1777655726.194661    4522 android_resource_loader.cc:100] Built resource verbalization_capabilities
+05-01 18:15:26.194  4522  4522 I native  : I0000 00:00:1777655726.194696    4522 android_resource_loader.cc:116] Loaded resource:verbalization_capabilities
+05-01 18:15:26.194  4522  4522 I native  : I0000 00:00:1777655726.194703    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/verbalize_embedded_android.far" (as: FILE) ...
+05-01 18:15:26.194  4522  4522 I native  : I0000 00:00:1777655726.194711    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/verbalize_embedded_android.far" of size 2342559
+05-01 18:15:26.198  4522  4522 I native  : I0000 00:00:1777655726.198481    4522 android_resource_loader.cc:100] Built resource verbalize_grm_fst
+05-01 18:15:26.198  4522  4522 I native  : I0000 00:00:1777655726.198529    4522 android_resource_loader.cc:116] Loaded resource:verbalize_grm_fst
+05-01 18:15:26.198  4522  4522 I native  : I0000 00:00:1777655726.198543    4522 android_resource_loader.cc:100] Built resource speller_algo
+05-01 18:15:26.198  4522  4522 I native  : I0000 00:00:1777655726.198546    4522 android_resource_loader.cc:116] Loaded resource:speller_algo
+05-01 18:15:26.218  4522  4522 I native  : I0000 00:00:1777655726.218432    4522 android_resource_loader.cc:100] Built resource verbalize_grm_algo
+05-01 18:15:26.218  4522  4522 I native  : I0000 00:00:1777655726.218504    4522 android_resource_loader.cc:116] Loaded resource:verbalize_grm_algo
+05-01 18:15:26.222  4522  4522 I native  : I0000 00:00:1777655726.222383    4522 voice_params_resource.cc:33] Voice information: MessageLite at 0xb400007b11492b20
+05-01 18:15:26.222  4522  4522 I native  : I0000 00:00:1777655726.222431    4522 android_resource_loader.cc:100] Built resource voice_params
+05-01 18:15:26.222  4522  4522 I native  : I0000 00:00:1777655726.222436    4522 android_resource_loader.cc:116] Loaded resource:voice_params
+05-01 18:15:26.255  4522  4522 I native  : I0000 00:00:1777655726.255609    4522 android_resource_loader.cc:100] Built resource word_resolver_algo
+05-01 18:15:26.255  4522  4522 I native  : I0000 00:00:1777655726.255653    4522 android_resource_loader.cc:116] Loaded resource:word_resolver_algo
+05-01 18:15:26.255  4522  4522 I native  : I0000 00:00:1777655726.255674    4522 data_source.cc:95] Opening data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/xsampa_to_tts_to-en_us.far" (as: FILE) ...
+05-01 18:15:26.255  4522  4522 I native  : I0000 00:00:1777655726.255710    4522 data_source.cc:99] ... Opened data source "/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83/../en-us-x-multi-r83/xsampa_to_tts_to-en_us.far" of size 22132
+05-01 18:15:26.256  4522  4522 I native  : I0000 00:00:1777655726.256122    4522 android_resource_loader.cc:100] Built resource xsampa_to_tts_phoneme_mapper
+05-01 18:15:26.256  4522  4522 I native  : I0000 00:00:1777655726.256152    4522 android_resource_loader.cc:116] Loaded resource:xsampa_to_tts_phoneme_mapper
+05-01 18:15:26.256  4522  4522 I native  : I0000 00:00:1777655726.256163    4522 local_pipeline_runner.cc:49] Done loading all resources from: {/data/user_de/0/com.google.android.tts/files/superpacks/en-us/en-us-x-multi-seanet-r83}
+05-01 18:15:26.259  4522  4522 I ComposerWrapperImpl: Done initializing en-us-x-iog-seanet-embedded
+05-01 18:15:26.263  2599  2599 D TextToSpeechManagerPerUserService: Connected successfully to TTS engine: com.google.android.tts
+05-01 18:15:26.264 14203 14214 I TextToSpeech: Connected to TTS engine
+05-01 18:15:27.175  4522 11876 I GoogleTTSServiceImpl: currentLocale = en-US
+05-01 18:15:27.247  2599  3491 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+05-01 18:15:27.337  3593  3593 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+05-01 18:15:27.554 14236 14236 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+05-01 18:15:27.571  4522 11876 I GoogleTTSServiceImpl: For default lang en-us is name en-US-language (en-us-x-iog-server)
+05-01 18:15:27.580  4522 11876 W libbinder.Binder: Binder transaction to android.speech.tts.ITextToSpeechService code 15 took 1312ms. Data bytes: 128 Reply bytes: 40 Flags: 18
+05-01 18:15:27.581 14203 14235 I TextToSpeech: Setting up the connection to TTS engine...
+05-01 18:15:27.666  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+05-01 18:15:27.669  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:27.715  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:27.717  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:27.721  3046  7501 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:27.728  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:27.731  3046  7501 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:27.735  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:27.738  3046  7501 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:27.747  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000024/dl-MlkitOcrCommon.optional_261332100400.apk has no usable artifacts
+05-01 18:15:27.747  3046  7501 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+05-01 18:15:27.750  3046  7501 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+05-01 18:15:27.751  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:27.753  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:27.756  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+05-01 18:15:27.757  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:27.762  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+05-01 18:15:27.762  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:27.763  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:27.763  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:27.769  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-Appsearch.optional_253434100400.apk has no usable artifacts
+05-01 18:15:27.774  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001f/dl-MlkitBarcodeUi.optional_261332100400.apk has no usable artifacts
+05-01 18:15:27.779  3046  3046 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/C979021594972B0BA2D39F27BF33D93C4B1302BC/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 18:15:27.779  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:27.791  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:27.794  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001e/dl-VisionOcr.optional_261332100000.apk has no usable artifacts
+05-01 18:15:27.805  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000020/dl-PlayCloudSearch.optional_261332100000.apk has no usable artifacts
+05-01 18:15:27.811  3046  3046 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/707FFD883BF2A7896692338F9625CA52336E933B/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 18:15:27.812  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-TfliteDynamiteDynamite.integ_252130102100400.apk has no usable artifacts
+05-01 18:15:27.812  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:27.812  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~dKAWhbpuAhXMPrgX8_uNaA==/com.android.vending-VlQnPVZ5qb-G_00QsqpjnQ==/base.apk, fd=-1
+05-01 18:15:27.814  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000021/dl-Appsearch.optional_261332100400.apk has no usable artifacts
+05-01 18:15:27.819  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-MlkitBarcodeUi.optional_253434100400.apk has no usable artifacts
+05-01 18:15:27.865  4522 11876 I GoogleTTSServiceImpl: currentLocale = en-NG
+05-01 18:15:27.867  4522 11876 I GoogleTTSServiceImpl: currentLocale = en-NG
+05-01 18:15:27.868  4522 11876 I GoogleTTSServiceImpl: For default lang en-ng is name en-NG-language (en-ng-x-tfn-server)
+05-01 18:15:27.869  4522 11876 I GoogleTTSServiceImpl: currentLocale = en-NG
+05-01 18:15:28.098  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:28.452  4522 14228 I VoiceDataManager: Already downloading en-ng, ignoring async download request...
+05-01 18:15:28.452  4522 14228 I LocalSynthesizer: Attempting to load synthesizer for voice: en-us-x-hol-seanet-embedded
+05-01 18:15:28.452  4522 14228 I LocalSynthesizer: Voice en-us-x-hol-seanet-embedded is already supported by loaded synthesizer en-us-x-multi.
+05-01 18:15:28.453  4522 14228 I ComposerWrapperImpl: Skipping initialization, can already run voice en-us-x-hol-seanet-embedded.
+05-01 18:15:29.252 14203 14242 D ProfileInstaller: Installing profile for com.signbridge
+05-01 18:15:30.943  3054  3142 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+05-01 18:15:30.945  2599  3694 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:30.948  3054  3142 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+05-01 18:15:31.106  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:31.462  2599  2742 D ActivityManager: freezing 3301 com.google.android.permissioncontroller
+05-01 18:15:31.468  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-01 18:15:31.468  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-01 18:15:31.468  2599  2802 D InetDiagMessage: Destroyed live tcp sockets for uids={10212} in 1ms
+05-01 18:15:32.246  3593  5874 I cn_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@df751aa
+05-01 18:15:32.318 14245 14245 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+05-01 18:15:32.323 14245 14245 I AndroidRuntime: Using default boot image
+05-01 18:15:32.323 14245 14245 I AndroidRuntime: Leaving lock profiling enabled
+05-01 18:15:32.325 14245 14245 I app_process: Using CollectorTypeCMC GC.
+05-01 18:15:32.371  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-01 18:15:32.371  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-01 18:15:32.371  2599  2802 D InetDiagMessage: Destroyed live tcp sockets for uids={10202} in 1ms
+05-01 18:15:32.372  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-01 18:15:32.372  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-01 18:15:32.372  2599  2802 D InetDiagMessage: Destroyed live tcp sockets for uids={20202} in 1ms
+05-01 18:15:32.511 14245 14245 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+05-01 18:15:32.522 14245 14245 D nativeloader: Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+05-01 18:15:32.522 14245 14245 D app_process: u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/9/icu") succeeded. 
+05-01 18:15:32.522 14245 14245 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt76l.dat
+05-01 18:15:32.523 14245 14245 D nativeloader: Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+05-01 18:15:32.524 14245 14245 D nativeloader: Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+05-01 18:15:32.526 14245 14245 I app_process: Priority-to-niceness mapping: 19, 16, 13, 10, 0, -2, -4, -5, -6, -8
+05-01 18:15:32.529 14245 14245 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*1947731759]#PCL[/system/framework/android.test.mock.jar*3673435773]} | PCL[])
+05-01 18:15:32.531 14245 14245 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*3527284906]{PCL[/system/framework/android.test.base.jar*1947731759]#PCL[/system/framework/android.test.mock.jar*3673435773]}#PCL[/system/framework/android.test.base.jar*1947731759]} | PCL[/system/framework/android.test.runner.jar*3527284906])
+05-01 18:15:32.562 14245 14245 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-01 18:15:32.563 14245 14245 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+05-01 18:15:32.575 14245 14245 I AconfigPackage: android.media.swcodec.flags is mapped to com.android.media.swcodec
+05-01 18:15:32.576 14245 14245 I AconfigPackage: com.android.permission.flags is mapped to com.android.permission
+05-01 18:15:32.576 14245 14245 I AconfigPackage: com.android.permissioncontroller.flags is mapped to com.android.permission
+05-01 18:15:32.576 14245 14245 I AconfigPackage: com.android.icu is mapped to com.android.i18n
+05-01 18:15:32.577 14245 14245 I AconfigPackage: com.android.appsearch.flags is mapped to com.android.appsearch
+05-01 18:15:32.577 14245 14245 I AconfigPackage: android.uprobestats.mainline.flags is mapped to com.android.uprobestats
+05-01 18:15:32.578 14245 14245 I AconfigPackage: com.android.crashrecovery.flags is mapped to com.android.crashrecovery
+05-01 18:15:32.578 14245 14245 I AconfigPackage: android.provider.flags is mapped to com.android.configinfrastructure
+05-01 18:15:32.578 14245 14245 I AconfigPackage: com.android.server.deviceconfig is mapped to com.android.configinfrastructure
+05-01 18:15:32.579 14245 14245 I AconfigPackage: com.android.art.flags is mapped to com.android.art
+05-01 18:15:32.579 14245 14245 I AconfigPackage: com.android.art.rw.flags is mapped to com.android.art
+05-01 18:15:32.579 14245 14245 I AconfigPackage: com.android.libcore is mapped to com.android.art
+05-01 18:15:32.580 14245 14245 I AconfigPackage: com.android.telephony.flags is mapped to com.android.telephonycore
+05-01 18:15:32.580 14245 14245 I AconfigPackage: com.android.media.extractor.flags is mapped to com.android.media
+05-01 18:15:32.580 14245 14245 I AconfigPackage: com.android.media.mainline.flags is mapped to com.android.media
+05-01 18:15:32.580 14245 14245 I AconfigPackage: com.android.wifi.flags is mapped to com.android.wifi
+05-01 18:15:32.581 14245 14245 I AconfigPackage: com.android.org.conscrypt.flags is mapped to com.android.conscrypt
+05-01 18:15:32.581 14245 14245 I AconfigPackage: com.android.org.conscrypt.net.flags is mapped to com.android.conscrypt
+05-01 18:15:32.581 14245 14245 I AconfigPackage: com.android.healthfitness.flags is mapped to com.android.healthfitness
+05-01 18:15:32.582 14245 14245 I AconfigPackage: com.android.ipsec.flags is mapped to com.android.ipsec
+05-01 18:15:32.582 14245 14245 I AconfigPackage: com.android.nfc.module.flags is mapped to com.android.nfcservices
+05-01 18:15:32.582 14245 14245 I AconfigPackage: com.android.adservices.ondevicepersonalization.flags is mapped to com.android.ondevicepersonalization
+05-01 18:15:32.583 14245 14245 I AconfigPackage: com.android.adbd.flags is mapped to com.android.adbd
+05-01 18:15:32.583 14245 14245 I AconfigPackage: com.android.bluetooth.flags is mapped to com.android.bt
+05-01 18:15:32.583 14245 14245 I AconfigPackage: com.android.devicelock.flags is mapped to com.android.devicelock
+05-01 18:15:32.583 14245 14245 I AconfigPackage: android.os.profiling is mapped to com.android.profiling
+05-01 18:15:32.583 14245 14245 I AconfigPackage: android.os.profiling.anomaly.flags is mapped to com.android.profiling
+05-01 18:15:32.584 14245 14245 I AconfigPackage: com.android.os.statsd.flags is mapped to com.android.os.statsd
+05-01 18:15:32.584 14245 14245 I AconfigPackage: com.android.rkpd.flags is mapped to com.android.rkpd
+05-01 18:15:32.584 14245 14245 I AconfigPackage: com.android.cellbroadcastreceiver.flags is mapped to com.android.cellbroadcast
+05-01 18:15:32.585 14245 14245 I AconfigPackage: com.android.adservices.flags is mapped to com.android.adservices
+05-01 18:15:32.585 14245 14245 I AconfigPackage: com.android.sdksandbox.flags is mapped to com.android.adservices
+05-01 18:15:32.585 14245 14245 I AconfigPackage: com.android.uwb.flags is mapped to com.android.uwb
+05-01 18:15:32.585 14245 14245 I AconfigPackage: com.android.ranging.flags is mapped to com.android.uwb
+05-01 18:15:32.585 14245 14245 I AconfigPackage: android.graphics.pdf.flags is mapped to com.android.mediaprovider
+05-01 18:15:32.585 14245 14245 I AconfigPackage: com.android.providers.media.flags is mapped to com.android.mediaprovider
+05-01 18:15:32.585 14245 14245 I AconfigPackage: android.graphics.pdf.flags.readonly is mapped to com.android.mediaprovider
+05-01 18:15:32.585 14245 14245 I AconfigPackage: com.android.tethering.mainline.beta is mapped to com.android.tethering
+05-01 18:15:32.585 14245 14245 I AconfigPackage: android.net.http is mapped to com.android.tethering
+05-01 18:15:32.586 14245 14245 I AconfigPackage: com.android.tethering.readonly.flags is mapped to com.android.tethering
+05-01 18:15:32.586 14245 14245 I AconfigPackage: android.net.vcn is mapped to com.android.tethering
+05-01 18:15:32.586 14245 14245 I AconfigPackage: com.android.net.flags is mapped to com.android.tethering
+05-01 18:15:32.586 14245 14245 I AconfigPackage: com.android.tethering.beta.test is mapped to com.android.tethering
+05-01 18:15:32.586 14245 14245 I AconfigPackage: com.android.nearby.flags is mapped to com.android.tethering
+05-01 18:15:32.586 14245 14245 I AconfigPackage: com.android.net.ct.flags is mapped to com.android.tethering
+05-01 18:15:32.586 14245 14245 I AconfigPackage: com.android.net.thread.flags is mapped to com.android.tethering
+05-01 18:15:32.586 14245 14245 I AconfigPackage: com.android.system.virtualmachine.flags is mapped to com.android.virt
+05-01 18:15:32.586 14245 14245 E FeatureFlagsImplExport: android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+05-01 18:15:32.589 14245 14245 D UiAutomationConnection: Created on user UserHandle{0}
+05-01 18:15:32.589 14245 14245 I UiAutomation: Initialized for user 0 on display 0
+05-01 18:15:32.589 14245 14245 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+05-01 18:15:32.592  2599  3694 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+05-01 18:15:32.592  2599  3694 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation, flags=0x0) when called by user 0
+05-01 18:15:32.593  2599  3694 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+05-01 18:15:32.598  2599  3694 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+05-01 18:15:32.598  2599  3694 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+05-01 18:15:32.598  2599  3694 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+05-01 18:15:32.598  2599  3694 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+05-01 18:15:32.598  2599  3694 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+05-01 18:15:32.598  2599  3694 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+05-01 18:15:32.599  3482  5184 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+05-01 18:15:32.603  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:32.604  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:32.604  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:32.604  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:32.604  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.604  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.604  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.604  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.605  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:32.605  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:32.605  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:32.605  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:32.605  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:32.606  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.606  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.606  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.606  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.607  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.607  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.607  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.607  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.610  2599  2599 D BatterySaverPolicy: accessibility changed to true, updating policy.
+05-01 18:15:32.637  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:32.637  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:32.639  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:32.639  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:32.639  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:32.639  2599  3504 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+05-01 18:15:32.640  2599  3504 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+05-01 18:15:32.640  2599  3504 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+05-01 18:15:32.640  2599  3504 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+05-01 18:15:32.640  2599  3504 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+05-01 18:15:32.640  2599  3504 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+05-01 18:15:32.640  2599  3504 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+05-01 18:15:32.640  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.640  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.640  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.640  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.641  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:32.641  3482  3518 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+05-01 18:15:32.642  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.642  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.642  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.642  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:32.646  2599  3504 D AccessibilityManagerService: .getAccessibilityShortcutTargets {shortcutType=32, userId=0}
+05-01 18:15:32.647  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+05-01 18:15:32.647  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+05-01 18:15:32.648  2896  3022 I AmbientCueRepository: Receiving SmartSpace targets # 0
+05-01 18:15:32.648  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+05-01 18:15:32.648  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:32.648  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:32.648  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:32.648  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:32.649  2896  2896 W SsPagerDots: Total number of pages invalid: 0. Assuming 1 page.
+05-01 18:15:32.650  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:32.650  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:32.650  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:32.650  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:32.650  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:32.650  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:32.650  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:32.650  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:32.650  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:32.650  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:32.650  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:32.650  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+05-01 18:15:32.651  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+05-01 18:15:32.651  2896  3022 I AmbientCueRepository: Receiving SmartSpace targets # 0
+05-01 18:15:32.651  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+05-01 18:15:32.651  2896  2896 W SsPagerDots: Total number of pages invalid: 0. Assuming 1 page.
+05-01 18:15:32.707  2970 14168 D NetworkMonitor/103: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "connectivitycheck.gstatic.com": No address associated with hostname
+05-01 18:15:32.707  2970 14167 D NetworkMonitor/103: PROBE_HTTPS https://www.google.com/generate_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "www.google.com": No address associated with hostname
+05-01 18:15:32.707  2970 14166 D NetworkMonitor/103: PROBE_FALLBACK http://www.google.com/gen_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "www.google.com": No address associated with hostname
+05-01 18:15:32.708  2970 14166 D NetworkMonitor/103: isCaptivePortal: isSuccessful()=false isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=20041ms
+05-01 18:15:32.709  2599  2802 D ConnectivityService: [103 WIFI] validation failed
+05-01 18:15:33.664 14203 14209 W com.signbridge: userfaultfd: MOVE ioctl seems unsupported: Try again
+05-01 18:15:33.711 14245 14245 W AccessibilityNodeInfoDumper: Fetch time: 81ms
+05-01 18:15:33.712  2599  2884 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+05-01 18:15:33.714  2599  2884 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+05-01 18:15:33.714  2599  2884 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+05-01 18:15:33.714  2599  2884 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+05-01 18:15:33.714  2599  2884 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+05-01 18:15:33.714  2599  2884 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+05-01 18:15:33.714  2599  2884 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+05-01 18:15:33.714  2599  2884 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+05-01 18:15:33.714  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.714  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.714  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.714  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.714  3482  3518 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+05-01 18:15:33.715  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:33.715  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:33.715  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:33.715  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:33.715  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:33.715  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.715  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.715  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.715  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.716 14245 14245 D AndroidRuntime: Shutting down VM
+05-01 18:15:33.716  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.716  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.716  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.716  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:33.716  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:33.716 14245 14257 W libbinder.IPCThreadState: call to talkWithDriver in joinThreadPool returned error: -9 (Bad file descriptor), FD: -1
+05-01 18:15:33.716 14245 14258 W libbinder.IPCThreadState: call to talkWithDriver in joinThreadPool returned error: -9 (Bad file descriptor), FD: -1
+05-01 18:15:33.716  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:33.716  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:33.716  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:33.716  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:33.716  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:33.716  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:33.716  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:33.716  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:33.716  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:33.716 14245 14261 W libbinder.IPCThreadState: call to talkWithDriver in joinThreadPool returned error: -9 (Bad file descriptor), FD: -1
+05-01 18:15:33.716  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+05-01 18:15:33.717  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+05-01 18:15:33.717  2599  2599 D BatterySaverPolicy: accessibility changed to false, updating policy.
+05-01 18:15:33.717  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+05-01 18:15:33.718  2896  3022 I AmbientCueRepository: Receiving SmartSpace targets # 0
+05-01 18:15:33.722  2896  2896 W SsPagerDots: Total number of pages invalid: 0. Assuming 1 page.
+05-01 18:15:34.112  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:36.718 14262 14262 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+05-01 18:15:36.753  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+05-01 18:15:36.755  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:36.756  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:36.757  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:36.758  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:36.760  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:36.761  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:36.762  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:36.763  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:36.764  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000024/dl-MlkitOcrCommon.optional_261332100400.apk has no usable artifacts
+05-01 18:15:36.764  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+05-01 18:15:36.764  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+05-01 18:15:36.765  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:36.765  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:36.766  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+05-01 18:15:36.766  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:36.767  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+05-01 18:15:36.768  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:36.768  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:36.768  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:36.769  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-Appsearch.optional_253434100400.apk has no usable artifacts
+05-01 18:15:36.770  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001f/dl-MlkitBarcodeUi.optional_261332100400.apk has no usable artifacts
+05-01 18:15:36.772  3046  3051 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/C979021594972B0BA2D39F27BF33D93C4B1302BC/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 18:15:36.772  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:36.772  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:36.774  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001e/dl-VisionOcr.optional_261332100000.apk has no usable artifacts
+05-01 18:15:36.774  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000020/dl-PlayCloudSearch.optional_261332100000.apk has no usable artifacts
+05-01 18:15:36.776  3046  3051 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/707FFD883BF2A7896692338F9625CA52336E933B/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 18:15:36.776  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-TfliteDynamiteDynamite.integ_252130102100400.apk has no usable artifacts
+05-01 18:15:36.777  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:36.777  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~dKAWhbpuAhXMPrgX8_uNaA==/com.android.vending-VlQnPVZ5qb-G_00QsqpjnQ==/base.apk, fd=-1
+05-01 18:15:36.778  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000021/dl-Appsearch.optional_261332100400.apk has no usable artifacts
+05-01 18:15:36.779  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-MlkitBarcodeUi.optional_253434100400.apk has no usable artifacts
+05-01 18:15:37.122  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:37.366  2599  2742 D ActivityManager: freezing 3593 com.google.android.gms
+05-01 18:15:37.368  2599  2742 D ActivityManager: freezing 5036 com.google.android.adservices.api
+05-01 18:15:37.555  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-01 18:15:37.556  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-01 18:15:37.556  2599  2802 D InetDiagMessage: Destroyed live tcp sockets for uids={10202} in 0ms
+05-01 18:15:40.135  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:40.947  3054  3142 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+05-01 18:15:40.948  2599  3707 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:40.948  3054  3142 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+05-01 18:15:42.603  2599  2682 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:42.640  2599  2682 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:43.143  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:43.724  2599  2682 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.158  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:46.339 14273 14273 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+05-01 18:15:46.342 14273 14273 I AndroidRuntime: Using default boot image
+05-01 18:15:46.342 14273 14273 I AndroidRuntime: Leaving lock profiling enabled
+05-01 18:15:46.344 14273 14273 I app_process: Using CollectorTypeCMC GC.
+05-01 18:15:46.394 14273 14273 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+05-01 18:15:46.399 14273 14273 D nativeloader: Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+05-01 18:15:46.399 14273 14273 D app_process: u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/9/icu") succeeded. 
+05-01 18:15:46.399 14273 14273 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt76l.dat
+05-01 18:15:46.400 14273 14273 D nativeloader: Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+05-01 18:15:46.400 14273 14273 D nativeloader: Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+05-01 18:15:46.401 14273 14273 I app_process: Priority-to-niceness mapping: 19, 16, 13, 10, 0, -2, -4, -5, -6, -8
+05-01 18:15:46.402 14273 14273 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*1947731759]#PCL[/system/framework/android.test.mock.jar*3673435773]} | PCL[])
+05-01 18:15:46.402 14273 14273 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*3527284906]{PCL[/system/framework/android.test.base.jar*1947731759]#PCL[/system/framework/android.test.mock.jar*3673435773]}#PCL[/system/framework/android.test.base.jar*1947731759]} | PCL[/system/framework/android.test.runner.jar*3527284906])
+05-01 18:15:46.415 14273 14273 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+05-01 18:15:46.415 14273 14273 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+05-01 18:15:46.417 14273 14273 I AconfigPackage: android.media.swcodec.flags is mapped to com.android.media.swcodec
+05-01 18:15:46.417 14273 14273 I AconfigPackage: com.android.permission.flags is mapped to com.android.permission
+05-01 18:15:46.417 14273 14273 I AconfigPackage: com.android.permissioncontroller.flags is mapped to com.android.permission
+05-01 18:15:46.417 14273 14273 I AconfigPackage: com.android.icu is mapped to com.android.i18n
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.appsearch.flags is mapped to com.android.appsearch
+05-01 18:15:46.418 14273 14273 I AconfigPackage: android.uprobestats.mainline.flags is mapped to com.android.uprobestats
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.crashrecovery.flags is mapped to com.android.crashrecovery
+05-01 18:15:46.418 14273 14273 I AconfigPackage: android.provider.flags is mapped to com.android.configinfrastructure
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.server.deviceconfig is mapped to com.android.configinfrastructure
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.art.flags is mapped to com.android.art
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.art.rw.flags is mapped to com.android.art
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.libcore is mapped to com.android.art
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.telephony.flags is mapped to com.android.telephonycore
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.media.extractor.flags is mapped to com.android.media
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.media.mainline.flags is mapped to com.android.media
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.wifi.flags is mapped to com.android.wifi
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.org.conscrypt.flags is mapped to com.android.conscrypt
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.org.conscrypt.net.flags is mapped to com.android.conscrypt
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.healthfitness.flags is mapped to com.android.healthfitness
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.ipsec.flags is mapped to com.android.ipsec
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.nfc.module.flags is mapped to com.android.nfcservices
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.adservices.ondevicepersonalization.flags is mapped to com.android.ondevicepersonalization
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.adbd.flags is mapped to com.android.adbd
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.bluetooth.flags is mapped to com.android.bt
+05-01 18:15:46.418 14273 14273 I AconfigPackage: com.android.devicelock.flags is mapped to com.android.devicelock
+05-01 18:15:46.419 14273 14273 I AconfigPackage: android.os.profiling is mapped to com.android.profiling
+05-01 18:15:46.419 14273 14273 I AconfigPackage: android.os.profiling.anomaly.flags is mapped to com.android.profiling
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.os.statsd.flags is mapped to com.android.os.statsd
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.rkpd.flags is mapped to com.android.rkpd
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.cellbroadcastreceiver.flags is mapped to com.android.cellbroadcast
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.adservices.flags is mapped to com.android.adservices
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.sdksandbox.flags is mapped to com.android.adservices
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.uwb.flags is mapped to com.android.uwb
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.ranging.flags is mapped to com.android.uwb
+05-01 18:15:46.419 14273 14273 I AconfigPackage: android.graphics.pdf.flags is mapped to com.android.mediaprovider
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.providers.media.flags is mapped to com.android.mediaprovider
+05-01 18:15:46.419 14273 14273 I AconfigPackage: android.graphics.pdf.flags.readonly is mapped to com.android.mediaprovider
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.tethering.mainline.beta is mapped to com.android.tethering
+05-01 18:15:46.419 14273 14273 I AconfigPackage: android.net.http is mapped to com.android.tethering
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.tethering.readonly.flags is mapped to com.android.tethering
+05-01 18:15:46.419 14273 14273 I AconfigPackage: android.net.vcn is mapped to com.android.tethering
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.net.flags is mapped to com.android.tethering
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.tethering.beta.test is mapped to com.android.tethering
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.nearby.flags is mapped to com.android.tethering
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.net.ct.flags is mapped to com.android.tethering
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.net.thread.flags is mapped to com.android.tethering
+05-01 18:15:46.419 14273 14273 I AconfigPackage: com.android.system.virtualmachine.flags is mapped to com.android.virt
+05-01 18:15:46.419 14273 14273 E FeatureFlagsImplExport: android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+05-01 18:15:46.420 14273 14273 D UiAutomationConnection: Created on user UserHandle{0}
+05-01 18:15:46.421 14273 14273 I UiAutomation: Initialized for user 0 on display 0
+05-01 18:15:46.421 14273 14273 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+05-01 18:15:46.421  2599  3707 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+05-01 18:15:46.421  2599  3707 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation, flags=0x0) when called by user 0
+05-01 18:15:46.422  2599  3707 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+05-01 18:15:46.422  2599  3707 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+05-01 18:15:46.422  2599  3707 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+05-01 18:15:46.422  2599  3707 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+05-01 18:15:46.422  2599  3707 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+05-01 18:15:46.422  2599  3707 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+05-01 18:15:46.422  2599  3707 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+05-01 18:15:46.423  3482  3518 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:46.424  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:46.424  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.424  2599  2599 D BatterySaverPolicy: accessibility changed to true, updating policy.
+05-01 18:15:46.424  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:46.425  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:46.425  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:46.425  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:46.425  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:46.425  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:46.426  2599  2613 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+05-01 18:15:46.426  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:46.426  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:46.426  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:46.426  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:46.426  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:46.427  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+05-01 18:15:46.427  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+05-01 18:15:46.427  2896  3022 I AmbientCueRepository: Receiving SmartSpace targets # 0
+05-01 18:15:46.427  2599  2613 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+05-01 18:15:46.427  2599  2613 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+05-01 18:15:46.427  2599  2613 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+05-01 18:15:46.427  2599  2613 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+05-01 18:15:46.427  2599  2613 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+05-01 18:15:46.427  2599  2613 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+05-01 18:15:46.427  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+05-01 18:15:46.428  3482  3518 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+05-01 18:15:46.428  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:46.428  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:46.428  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:46.428  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:46.428  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:46.428  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:46.428  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:46.428  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:46.428  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:46.428  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.428  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:46.428  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:46.428  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:46.428  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:46.428  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:46.428  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:46.429  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.429  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.429  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.429  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+05-01 18:15:46.429  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.429  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.429  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.429  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:46.429  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+05-01 18:15:46.430  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+05-01 18:15:46.430  2896  3022 I AmbientCueRepository: Receiving SmartSpace targets # 0
+05-01 18:15:46.431  2896  2896 W SsPagerDots: Total number of pages invalid: 0. Assuming 1 page.
+05-01 18:15:46.432  2599  3144 D AccessibilityManagerService: .getAccessibilityShortcutTargets {shortcutType=32, userId=0}
+05-01 18:15:46.432  2896  2896 W SsPagerDots: Total number of pages invalid: 0. Assuming 1 page.
+05-01 18:15:46.707 14285 14285 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+05-01 18:15:46.740  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+05-01 18:15:46.741  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:46.742  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:46.743  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:46.744  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:46.745  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:46.746  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:46.747  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:46.748  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:46.749  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000024/dl-MlkitOcrCommon.optional_261332100400.apk has no usable artifacts
+05-01 18:15:46.749  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+05-01 18:15:46.750  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+05-01 18:15:46.750  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:46.750  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:46.751  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+05-01 18:15:46.751  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:46.752  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+05-01 18:15:46.752  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:46.753  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:46.753  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:46.754  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-Appsearch.optional_253434100400.apk has no usable artifacts
+05-01 18:15:46.755  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001f/dl-MlkitBarcodeUi.optional_261332100400.apk has no usable artifacts
+05-01 18:15:46.756  3046  3051 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/C979021594972B0BA2D39F27BF33D93C4B1302BC/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 18:15:46.757  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:46.757  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:46.758  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001e/dl-VisionOcr.optional_261332100000.apk has no usable artifacts
+05-01 18:15:46.759  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000020/dl-PlayCloudSearch.optional_261332100000.apk has no usable artifacts
+05-01 18:15:46.760  3046  3051 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/707FFD883BF2A7896692338F9625CA52336E933B/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 18:15:46.761  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-TfliteDynamiteDynamite.integ_252130102100400.apk has no usable artifacts
+05-01 18:15:46.761  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:46.762  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~dKAWhbpuAhXMPrgX8_uNaA==/com.android.vending-VlQnPVZ5qb-G_00QsqpjnQ==/base.apk, fd=-1
+05-01 18:15:46.763  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000021/dl-Appsearch.optional_261332100400.apk has no usable artifacts
+05-01 18:15:46.764  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-MlkitBarcodeUi.optional_253434100400.apk has no usable artifacts
+05-01 18:15:47.456 14273 14273 W AccessibilityNodeInfoDumper: Fetch time: 20ms
+05-01 18:15:47.458  2599  2884 V AccessibilityManagerService: onUserStateChangedLocked for userId: 0, forceUpdate: false
+05-01 18:15:47.459  2599  2884 V AccessibilityUserState: updateShortcutTargets: type:accessibility_shortcut_target_service, current:{}, new:{}
+05-01 18:15:47.459  2599  2884 V AccessibilityUserState: updateShortcutTargets: type:accessibility_button_targets, current:{}, new:{}
+05-01 18:15:47.459  2599  2884 V AccessibilityUserState: updateShortcutTargets: type:accessibility_gesture_targets, current:{}, new:{}
+05-01 18:15:47.459  2599  2884 V AccessibilityUserState: updateShortcutTargets: type:accessibility_qs_targets, current:{}, new:{}
+05-01 18:15:47.459  2599  2884 V AccessibilityUserState: updateShortcutTargets: type:accessibility_key_gesture_targets, current:{}, new:{}
+05-01 18:15:47.460  2599  2884 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+05-01 18:15:47.460  2599  2884 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+05-01 18:15:47.460  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.460  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.460  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.460  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.460  3482  3518 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+05-01 18:15:47.460  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.460  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.460  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.460  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.460  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.460  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.461  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:47.461  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.461  2599  2599 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:47.461  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:47.461  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:47.461  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:47.462  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:47.462  2599  2599 D BatterySaverPolicy: accessibility changed to false, updating policy.
+05-01 18:15:47.462  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:47.462  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:47.462  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:47.462  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:47.462 14273 14288 W libbinder.IPCThreadState: call to talkWithDriver in joinThreadPool returned error: -9 (Bad file descriptor), FD: -1
+05-01 18:15:47.462 14273 14281 W libbinder.IPCThreadState: call to talkWithDriver in joinThreadPool returned error: -9 (Bad file descriptor), FD: -1
+05-01 18:15:47.462  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:47.462 14273 14282 W libbinder.IPCThreadState: call to talkWithDriver in joinThreadPool returned error: -9 (Bad file descriptor), FD: -1
+05-01 18:15:47.462  3482  3713 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-01 18:15:47.462  3482  3713 I AiAiEcho: EchoTargets: 
+05-01 18:15:47.462  3482  3713 I AiAiEcho: Filtered by AiAi flag check: 
+05-01 18:15:47.462  3482  3713 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-01 18:15:47.462  3482  3713 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-01 18:15:47.462  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface ambientcue with targets# 0 (types=[])
+05-01 18:15:47.462  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+05-01 18:15:47.462  2896  3022 I AmbientCueRepository: Receiving SmartSpace targets # 0
+05-01 18:15:47.462 14273 14273 D AndroidRuntime: Shutting down VM
+05-01 18:15:47.462  3482  3713 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+05-01 18:15:47.468  2896  2896 W SsPagerDots: Total number of pages invalid: 0. Assuming 1 page.
+05-01 18:15:47.866  2599  2742 D ActivityManager: freezing 4199 com.google.android.apps.wellbeing
+05-01 18:15:47.869  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+05-01 18:15:47.869  2599  2802 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+05-01 18:15:47.869  2599  2802 D InetDiagMessage: Destroyed live tcp sockets for uids={10159} in 1ms
+05-01 18:15:49.167  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:50.955  3054  3142 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+05-01 18:15:50.955  3054  3142 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+05-01 18:15:50.956  2599  3504 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:51.035  2599  2742 D ActivityManager: freezing 7245 com.android.keychain
+05-01 18:15:51.036  2599  2742 D ActivityManager: freezing 6441 com.android.settings
+05-01 18:15:51.038  2599  2742 D ActivityManager: freezing 5104 com.android.dynsystem:dynsystem
+05-01 18:15:51.039  2599  2742 D ActivityManager: freezing 5050 com.android.dynsystem
+05-01 18:15:51.163  2599  3504 W AppOps  : Noting op not finished: uid 10155 pkg com.google.android.gms code 113 startTime of in progress event=1777650170020
+05-01 18:15:51.169  2599  2867 W AppOps  : Noting op not finished: uid 10155 pkg com.google.android.gms code 79 startTime of in progress event=1777650170020
+05-01 18:15:51.180  4139  4447 I ActivityScheduler: nextTriggerTime: 6371778, in 238100ms, detectorType: 39, FULL_TYPE alarmWindowMillis: 80000
+05-01 18:15:52.165  2599  3504 W AppOps  : Noting op not finished: uid 10155 pkg com.google.android.gms code 113 startTime of in progress event=1777650170020
+05-01 18:15:52.174  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:55.183  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:15:56.470  2599  2682 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:56.470  2599  2682 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:56.708 14300 14300 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+05-01 18:15:56.746  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+05-01 18:15:56.747  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:56.749  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:56.751  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:56.753  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:56.755  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:56.758  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:56.759  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:56.761  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:15:56.763  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000024/dl-MlkitOcrCommon.optional_261332100400.apk has no usable artifacts
+05-01 18:15:56.764  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+05-01 18:15:56.764  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+05-01 18:15:56.765  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:56.765  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:56.766  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+05-01 18:15:56.767  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:56.768  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+05-01 18:15:56.768  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:56.769  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:56.770  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:56.771  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-Appsearch.optional_253434100400.apk has no usable artifacts
+05-01 18:15:56.772  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001f/dl-MlkitBarcodeUi.optional_261332100400.apk has no usable artifacts
+05-01 18:15:56.775  3046  3051 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/C979021594972B0BA2D39F27BF33D93C4B1302BC/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 18:15:56.775  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:56.776  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:56.777  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001e/dl-VisionOcr.optional_261332100000.apk has no usable artifacts
+05-01 18:15:56.779  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000020/dl-PlayCloudSearch.optional_261332100000.apk has no usable artifacts
+05-01 18:15:56.782  3046  3051 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/707FFD883BF2A7896692338F9625CA52336E933B/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 18:15:56.784  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-TfliteDynamiteDynamite.integ_252130102100400.apk has no usable artifacts
+05-01 18:15:56.784  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:15:56.785  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~dKAWhbpuAhXMPrgX8_uNaA==/com.android.vending-VlQnPVZ5qb-G_00QsqpjnQ==/base.apk, fd=-1
+05-01 18:15:56.787  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000021/dl-Appsearch.optional_261332100400.apk has no usable artifacts
+05-01 18:15:56.790  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-MlkitBarcodeUi.optional_253434100400.apk has no usable artifacts
+05-01 18:15:57.470  2599  2682 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:15:58.194  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:16:00.646  2599  2830 W SntpClient: Unknown host: time.android.com
+05-01 18:16:00.646  2599  2830 D SntpClient: request time failed
+05-01 18:16:00.954  3054  3142 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+05-01 18:16:00.955  2599  3697 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 18:16:00.956  3054  3142 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+05-01 18:16:01.206  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:16:04.220  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 18:16:04.330  4139 14296 W jpxh    : [{0}] Failed to resolve name. status={1}
+05-01 18:16:06.760 14308 14308 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+05-01 18:16:06.793  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+05-01 18:16:06.795  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:16:06.797  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:16:06.798  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:16:06.800  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:16:06.801  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:16:06.803  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:16:06.804  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:16:06.806  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 18:16:06.807  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000024/dl-MlkitOcrCommon.optional_261332100400.apk has no usable artifacts
+05-01 18:16:06.807  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+05-01 18:16:06.808  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+05-01 18:16:06.808  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:16:06.808  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:16:06.809  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+05-01 18:16:06.809  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:16:06.811  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+05-01 18:16:06.811  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:16:06.812  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:16:06.812  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:16:06.813  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-Appsearch.optional_253434100400.apk has no usable artifacts
+05-01 18:16:06.814  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001f/dl-MlkitBarcodeUi.optional_261332100400.apk has no usable artifacts
+05-01 18:16:06.816  3046  3051 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/C979021594972B0BA2D39F27BF33D93C4B1302BC/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 18:16:06.816  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:16:06.817  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:16:06.818  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001e/dl-VisionOcr.optional_261332100000.apk has no usable artifacts
+05-01 18:16:06.819  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000020/dl-PlayCloudSearch.optional_261332100000.apk has no usable artifacts
+05-01 18:16:06.820  3046  3051 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/707FFD883BF2A7896692338F9625CA52336E933B/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 18:16:06.821  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-TfliteDynamiteDynamite.integ_252130102100400.apk has no usable artifacts
+05-01 18:16:06.822  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 18:16:06.822  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~dKAWhbpuAhXMPrgX8_uNaA==/com.android.vending-VlQnPVZ5qb-G_00QsqpjnQ==/base.apk, fd=-1
+05-01 18:16:06.824  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000021/dl-Appsearch.optional_261332100400.apk has no usable artifacts
+05-01 18:16:06.824  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-MlkitBarcodeUi.optional_253434100400.apk has no usable artifacts
+05-01 18:16:07.235  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
