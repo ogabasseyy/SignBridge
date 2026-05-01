@@ -61,8 +61,7 @@ fun SignBridgeAppContent(
                     onBack = { destination = AppDestination.Home },
                 )
 
-                AppDestination.Listen -> PlaceholderScreen(
-                    title = "Listen",
+                AppDestination.Listen -> ListenScreen(
                     onBack = { destination = AppDestination.Home },
                 )
 
