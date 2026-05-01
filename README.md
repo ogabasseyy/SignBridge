@@ -1,24 +1,96 @@
 # SignBridge
 
-SignBridge is an offline-first Android MVP for the Gemma 4 Good Hackathon, Digital Equity & Inclusivity track. It is scoped to one bounded communication workflow: helping a Deaf signer communicate with a hearing person in a stressful Lagos roadside interaction.
+Offline-first Android MVP for the Gemma 4 Good Hackathon, Digital Equity & Inclusivity track.
 
-## Bounded Scope
+SignBridge is scoped to one bounded workflow: a Deaf signer in a stressful Lagos roadside interaction needs a hearing non-signer to understand them quickly, without internet.
 
-This is not a universal sign-language translator. The hackathon MVP targets 25 fixed phrases, one demo scenario, and one bidirectional flow.
+## What Works In This Repo
 
-## Privacy Promise
+- Native Android app in Kotlin + Jetpack Compose.
+- First-run safety disclaimer.
+- Home, Emergency, Sign to Speech, Listen, and Settings screens.
+- Emergency grid with six large TTS-ready phrases.
+- CameraX Sign to Speech shell with push-to-sign state.
+- Placeholder classifier integration with top-3 picker.
+- Selected phrase -> app-level tool trace -> `GemmaClient` boundary -> speakable preview -> manual Speak action.
+- Listen typed-reply fallback with one-sentence condensation.
+- Privacy-first settings: auto-speak off, data contribution off, threshold 0.65.
+- Test Android Apps emulator QA evidence under `docs/verification/`.
 
-No backend, accounts, analytics, or cloud sync are part of the hackathon build. Camera frames and microphone audio are processed on-device. Raw video and audio are not stored by default.
+## What Is Still Pending
 
-## Setup
+This is not yet a final hackathon submission build.
 
-The project is a single-module native Android app using Kotlin and Jetpack Compose.
+- Physical Galaxy S24 Ultra Gate 0: AICore/Gemma 4 runtime must be verified in-app.
+- Live ML Kit Prompt API or LiteRT-LM Gemma generation must replace the current deterministic placeholder.
+- MediaPipe Holistic `.task` asset and real landmark extraction must be wired.
+- The current TFLite classifier file is a placeholder; a trained classifier must be exported from real/synthetic landmark data.
+- Offline microphone speech recognition must be verified on the physical phone. Typed reply fallback is implemented.
+
+## Privacy
+
+- No backend.
+- No accounts.
+- No analytics.
+- No crash reporting.
+- No network permission.
+- Camera and microphone permissions only.
+- Raw video/audio are not persisted by default.
 
 ## Architecture
 
-CameraX and MediaPipe produce landmark windows, a LiteRT/TFLite classifier predicts phrase candidates, Gemma rewrites selected glosses into speakable text, and Android TextToSpeech speaks the result. The reverse loop uses on-device speech recognition plus Gemma condensation.
+```mermaid
+flowchart TD
+    A["CameraX front camera"] --> B["MediaPipe landmark extractor (pending real task asset)"]
+    B --> C["30-frame landmark window"]
+    C --> D["LiteRT/TFLite phrase classifier (placeholder asset currently)"]
+    D --> E["Top-3 picker"]
+    E --> F["App-level tool trace: detect_context/select_tone"]
+    F --> G["GemmaClient boundary: ML Kit Prompt API or LiteRT-LM"]
+    G --> H["Speakable preview"]
+    H --> I["Android TextToSpeech"]
 
-## Known Limitations
+    J["Typed or spoken hearing reply"] --> K["SpeechToTextClient boundary or typed fallback"]
+    K --> L["Gemma condensation prompt"]
+    L --> M["Large text reply"]
+```
 
-Gemma runtime availability must be verified on the target S24 Ultra before product work continues. The app intentionally supports a limited phrase set and documents signer-dependent evaluation.
+## Setup
 
+Requirements:
+
+- Android Studio or Android SDK CLI.
+- JDK 17.
+- Android emulator or physical Android device.
+
+Commands:
+
+```bash
+./gradlew testDebugUnitTest connectedDebugAndroidTest :app:assembleDebug
+.venv/bin/pytest ml/tests -q
+```
+
+Install debug APK:
+
+```bash
+$HOME/Library/Android/sdk/platform-tools/adb install -r app/build/outputs/apk/debug/app-debug.apk
+```
+
+## Verification
+
+Key evidence:
+
+- `docs/verification/test-android-apps-qa.md`
+- `docs/verification/offline-test-matrix.md`
+- `docs/verification/physical-s24-qa.md`
+- `docs/verification/gemma-tooling-claim.md`
+- `docs/verification/classifier-report.md`
+
+Latest local verification:
+
+- `./gradlew testDebugUnitTest connectedDebugAndroidTest :app:assembleDebug` passed.
+- `.venv/bin/pytest ml/tests -q` passed: 12 tests.
+
+## License
+
+Apache 2.0.
