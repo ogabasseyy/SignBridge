@@ -1,0 +1,4 @@
+<resources>
+    <style name="Theme.SignBridge" parent="android:style/Theme.Material.NoActionBar" />
+</resources>
+

@@ -1,0 +1,33 @@
+.gradle/
+.idea/
+.kotlin/
+build/
+**/build/
+local.properties
+
+# Android generated files
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Signing material
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# ML/private data
+ml/data/
+ml/private/
+ml/captures/
+ml/models/downloads/
+*.litertlm
+*.task
+
+# OS/editor
+.DS_Store
+*.swp
+
