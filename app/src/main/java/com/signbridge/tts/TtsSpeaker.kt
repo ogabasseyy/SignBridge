@@ -7,7 +7,7 @@ import java.util.Locale
 class TtsSpeaker(
     context: Context,
     private val speechRate: Float = 1.0f,
-) : TextToSpeech.OnInitListener {
+) : TextToSpeech.OnInitListener, Speaker {
     private var tts: TextToSpeech? = TextToSpeech(context.applicationContext, this)
     private var ready = false
 
@@ -24,7 +24,7 @@ class TtsSpeaker(
         ready = true
     }
 
-    fun speak(text: String) {
+    override fun speak(text: String) {
         if (!ready || text.isBlank()) return
         tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "signbridge-${text.hashCode()}")
     }

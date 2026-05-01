@@ -1,0 +1,177 @@
+--------- beginning of main
+05-01 17:10:35.741  3593  7312 W IcingInternalCorpora: Failed to get Person Indexable for url:content://com.android.contacts/contacts/22286, java.util.concurrent.TimeoutException: Timed out waiting for Task
+05-01 17:10:35.969  3054  3142 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+05-01 17:10:35.970  3054  3142 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+05-01 17:10:35.974  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 17:10:35.986  2599  2720 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 17:10:36.215  3593  3593 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS xflg=0x4 pkg=com.google.android.gms }
+05-01 17:10:36.740  9365  9365 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+05-01 17:10:36.922  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+05-01 17:10:36.936  3046  3046 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:36.943  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:36.946  2599  4972 I AppSearchIcing: icing-search-engine.cc:2327: Persisting data to disk with mode 3
+05-01 17:10:36.966  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:36.978  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:36.988  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:36.993  3046  3046 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:37.000  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:37.003  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:37.013  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000024/dl-MlkitOcrCommon.optional_261332100400.apk has no usable artifacts
+05-01 17:10:37.014  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+05-01 17:10:37.015  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+05-01 17:10:37.015  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:37.016  2599  4972 I AppSearchIcing: icing-search-engine.cc:2340: PersistToDisk completed.
+05-01 17:10:37.017  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:37.018  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+05-01 17:10:37.018  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:37.033  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+05-01 17:10:37.034  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:37.038  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:37.039  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:37.116  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-Appsearch.optional_253434100400.apk has no usable artifacts
+05-01 17:10:37.118  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001f/dl-MlkitBarcodeUi.optional_261332100400.apk has no usable artifacts
+05-01 17:10:37.133  3046  3046 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/C979021594972B0BA2D39F27BF33D93C4B1302BC/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 17:10:37.137  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:37.139  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:37.146  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001e/dl-VisionOcr.optional_261332100000.apk has no usable artifacts
+05-01 17:10:37.154  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000020/dl-PlayCloudSearch.optional_261332100000.apk has no usable artifacts
+05-01 17:10:37.160  3046  3051 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/707FFD883BF2A7896692338F9625CA52336E933B/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 17:10:37.164  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-TfliteDynamiteDynamite.integ_252130102100400.apk has no usable artifacts
+05-01 17:10:37.164  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:37.166  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~dKAWhbpuAhXMPrgX8_uNaA==/com.android.vending-VlQnPVZ5qb-G_00QsqpjnQ==/base.apk, fd=-1
+05-01 17:10:37.170  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000021/dl-Appsearch.optional_261332100400.apk has no usable artifacts
+05-01 17:10:37.173  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-MlkitBarcodeUi.optional_253434100400.apk has no usable artifacts
+--------- beginning of system
+05-01 17:10:37.551  2599  2619 W Looper  : Slow dispatch took 160ms android.ui app=system_server main=false group=TOP_APP h=com.android.server.am.ActivityManagerService$UiHandler c=com.android.server.am.UidObserverController$$ExternalSyntheticLambda0@57d0042 m=0
+05-01 17:10:38.494  2599  2619 W Looper  : Slow dispatch took 737ms android.ui app=system_server main=false group=TOP_APP h=com.android.server.am.ActivityManagerService$UiHandler c=com.android.server.am.UidObserverController$$ExternalSyntheticLambda0@57d0042 m=0
+05-01 17:10:39.108  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 17:10:42.171  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 17:10:42.460  4522  9291 D AudioSystem: onNewService: media.audio_policy service obtained 0xb400007c010966c0
+05-01 17:10:42.528  4522  9291 D AudioSystem: getService: IAudioPolicyService retrieved: 0xb400007c010966c0  cached: 0xb400007c010966c0
+05-01 17:10:42.596  4522  9291 I GoogleTTSServiceImpl: Synthesis request for locale eng-NGA and name en-NG-language
+05-01 17:10:42.698  2599  2609 I system_server: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 2(40KB) LOS objects, 38% free, 37MB/61MB, paused 4.622ms,28.543ms total 2.349s
+05-01 17:10:43.492  4522  9291 I VoiceDataManager: Already downloading en-ng, ignoring async download request...
+05-01 17:10:43.492  4522  9291 I VoiceDataManager: Already downloading en-ng, ignoring async download request...
+05-01 17:10:43.492  4522  9291 I GoogleTTSServiceImpl: TTS dispatch: en-us-x-iog-seanet-embedded
+05-01 17:10:43.493  4522  9291 I LocalSynthesizer: Attempting to load synthesizer for voice: en-us-x-iog-seanet-embedded
+05-01 17:10:43.493  4522  9291 I LocalSynthesizer: Voice en-us-x-iog-seanet-embedded is already supported by loaded synthesizer en-us-x-multi.
+05-01 17:10:43.493  4522  9291 I ComposerWrapperImpl: Skipping initialization, can already run voice en-us-x-iog-seanet-embedded.
+05-01 17:10:43.902  4522  9375 I tflite  : Replacing 301 out of 301 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for subgraph 0.
+05-01 17:10:44.191  2527  7419 D NativePermissionController: checkPermission: missing 1 for 10165
+05-01 17:10:44.192  2527  7419 D NativePermissionController: checkPermission: missing 3 for 10165
+05-01 17:10:44.192  2527  7419 D NativePermissionController: checkPermission: missing 5 for 10165
+05-01 17:10:44.215  2527  7419 W AudioFlinger: createTrack_l(): mismatch between requested flags (00000008) and output flags (00000002)
+05-01 17:10:44.274  2527  7419 D AudioFlinger: Client defaulted notificationFrames to 2048 for frameCount 4096
+05-01 17:10:44.278  2527  7419 I AF::PthrPatchRecord: creating track with enforcement level 0
+05-01 17:10:44.387  2599  2867 E AppOps  : attributionTag  not declared in manifest of com.google.android.tts
+05-01 17:10:44.402  2527  7240 D NativePermissionController: checkPermission: missing 13 for 10165
+05-01 17:10:44.404  2527  3576 D NativePermissionController: checkPermission: missing 13 for 10165
+05-01 17:10:44.416  2527  7526 D NativePermissionController: checkPermission: missing 13 for 10165
+05-01 17:10:44.417  2527  7526 D NativePermissionController: checkPermission: missing 13 for 10165
+05-01 17:10:44.418  2599  3693 I AS.AudioService: AudioHardening background playback would be muted for com.google.android.tts (10165), level: full
+05-01 17:10:44.512  2532  9383 W libprocessgroup: A JoinCgroup action in the SystemMemoryProcess profile is used for controller memory in the cgroup v2 hierarchy and will be ignored
+05-01 17:10:44.524  3020  3020 I bluetooth: system/btif/avrcp/avrcp_service.cc:532 SendMediaUpdate: track_changed=true :  play_state=true :  queue=true
+05-01 17:10:44.545  3020  3020 E MediaControlProfile: onCurrentPlayerStateUpdated: base actions not supported, player actions= 0, expected at least= 7f
+05-01 17:10:44.551  3020  3020 W MediaControlGattService: Feature PLAYBACK_SPEED support: true
+05-01 17:10:44.551  3020  3020 W MediaControlGattService: Feature PLAYBACK_SPEED support: true
+05-01 17:10:44.555  3020  3020 W MediaControlGattService: Feature PLAYBACK_SPEED support: true
+05-01 17:10:44.555  3020  3020 W MediaControlGattService: Feature TRACK_POSITION support: true
+05-01 17:10:44.556  3020  3020 W MediaControlGattService: Feature TRACK_POSITION_NOTIFY support: true
+05-01 17:10:44.556  3020  3020 W MediaControlGattService: Feature MEDIA_STATE support: true
+05-01 17:10:44.556  3020  3020 W MediaControlGattService: Feature MEDIA_STATE support: true
+05-01 17:10:44.587  3020  3020 I BluetoothAdapterProperties: getBondedDevices: length=0
+05-01 17:10:44.603  3020  3020 W MediaControlGattService: Feature MEDIA_CONTROL_POINT_OPCODES_SUPPORTED support: true
+05-01 17:10:44.603  3020  3020 W MediaControlGattService: Feature TRACK_TITLE support: true
+05-01 17:10:44.603  3020  3020 W MediaControlGattService: Feature TRACK_TITLE support: true
+05-01 17:10:44.603  3020  3020 W MediaControlGattService: Feature TRACK_TITLE_NOTIFY support: true
+05-01 17:10:44.608  3020  3020 I BluetoothAdapterProperties: getBondedDevices: length=0
+05-01 17:10:44.609  3020  3020 W MediaControlGattService: Feature TRACK_DURATION support: true
+05-01 17:10:44.609  3020  3020 W MediaControlGattService: Feature TRACK_DURATION support: true
+05-01 17:10:44.609  3020  3020 W MediaControlGattService: Feature TRACK_DURATION_NOTIFY support: true
+05-01 17:10:44.611  3020  3020 I BluetoothAdapterProperties: getBondedDevices: length=0
+05-01 17:10:44.611  3020  3020 W MediaControlGattService: Feature MEDIA_STATE support: true
+05-01 17:10:44.611  3020  3020 W MediaControlGattService: Feature MEDIA_STATE support: true
+05-01 17:10:44.612  3020  3020 I BluetoothAdapterProperties: getBondedDevices: length=0
+05-01 17:10:44.612  3020  3020 W MediaControlGattService: Feature MEDIA_STATE support: true
+05-01 17:10:44.612  3020  3020 W MediaControlGattService: Feature SEEKING_SPEED support: true
+05-01 17:10:44.612  3020  3020 W MediaControlGattService: Feature SEEKING_SPEED support: true
+05-01 17:10:44.612  3020  3020 W MediaControlGattService: Feature SEEKING_SPEED support: true
+05-01 17:10:44.612  3020  3020 W MediaControlGattService: Feature TRACK_CHANGED support: true
+05-01 17:10:44.614  3020  3020 I BluetoothAdapterProperties: getBondedDevices: length=0
+05-01 17:10:44.614  3020  3020 W MediaControlProfile: MCS service state fields left unhandled: 
+05-01 17:10:44.614  3020  3020 W MediaControlProfile:    > PLAYER_NAME
+05-01 17:10:44.614  3020  3020 W MediaControlProfile:    > PLAYING_ORDER_SUPPORTED
+05-01 17:10:44.638  2527  2566 D AudioFlinger: mixer(0xb400007a555e5790) throttle end: throttle time(18)
+05-01 17:10:45.180  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 17:10:45.301  4522  9292 D AudioTrack: stop(15): called with 18505 frames delivered
+05-01 17:10:45.304  2599  2867 E AppOps  : attributionTag  not declared in manifest of com.google.android.tts
+05-01 17:10:45.316  3020  3020 I bluetooth: system/btif/avrcp/avrcp_service.cc:532 SendMediaUpdate: track_changed=false :  play_state=true :  queue=false
+05-01 17:10:45.316  3020  3020 E MediaControlProfile: onCurrentPlayerStateUpdated: base actions not supported, player actions= 0, expected at least= 7f
+05-01 17:10:45.316  3020  3020 W MediaControlGattService: Feature PLAYBACK_SPEED support: true
+05-01 17:10:45.316  3020  3020 W MediaControlGattService: Feature PLAYBACK_SPEED support: true
+05-01 17:10:45.316  3020  3020 W MediaControlGattService: Feature PLAYBACK_SPEED support: true
+05-01 17:10:45.316  3020  3020 W MediaControlGattService: Feature PLAYBACK_SPEED_NOTIFY support: true
+05-01 17:10:45.320  3020  3020 I BluetoothAdapterProperties: getBondedDevices: length=0
+05-01 17:10:45.320  3020  3020 W MediaControlGattService: Feature TRACK_POSITION support: true
+05-01 17:10:45.320  3020  3020 W MediaControlGattService: Feature TRACK_POSITION_NOTIFY support: true
+05-01 17:10:45.320  3020  3020 W MediaControlGattService: Feature MEDIA_STATE support: true
+05-01 17:10:45.320  3020  3020 W MediaControlGattService: Feature MEDIA_STATE support: true
+05-01 17:10:45.322  3020  3020 I BluetoothAdapterProperties: getBondedDevices: length=0
+05-01 17:10:45.322  3020  3020 W MediaControlGattService: Feature MEDIA_CONTROL_POINT_OPCODES_SUPPORTED support: true
+05-01 17:10:45.322  3020  3020 W MediaControlGattService: Feature MEDIA_STATE support: true
+05-01 17:10:45.322  3020  3020 W MediaControlGattService: Feature MEDIA_STATE support: true
+05-01 17:10:45.326  3020  3020 I BluetoothAdapterProperties: getBondedDevices: length=0
+05-01 17:10:45.327  3020  3020 W MediaControlGattService: Feature MEDIA_STATE support: true
+05-01 17:10:45.327  3020  3020 W MediaControlGattService: Feature SEEKING_SPEED support: true
+05-01 17:10:45.327  3020  3020 W MediaControlGattService: Feature SEEKING_SPEED support: true
+05-01 17:10:45.327  3020  3020 W MediaControlGattService: Feature SEEKING_SPEED support: true
+05-01 17:10:45.327  3020  3020 W MediaControlProfile: MCS service state fields left unhandled: 
+05-01 17:10:45.327  3020  3020 W MediaControlProfile:    > PLAYER_NAME
+05-01 17:10:45.327  3020  3020 W MediaControlProfile:    > PLAYING_ORDER_SUPPORTED
+05-01 17:10:45.887  3054  3142 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+05-01 17:10:45.890  3054  3142 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+05-01 17:10:45.908  2599  3696 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-01 17:10:46.776  9385  9385 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+05-01 17:10:46.917  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+05-01 17:10:46.922  3046  3046 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:46.927  3046  3046 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:46.937  3046  3046 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:46.955  3046  3046 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:46.958  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:46.967  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:46.971  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:46.974  3046  3051 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~9zdI27-KZDEvVC_7GO9BLQ==/com.google.android.gms-zDijJikcKxb1i4ibdVh7KA==/oat/arm64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+05-01 17:10:46.978  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000024/dl-MlkitOcrCommon.optional_261332100400.apk has no usable artifacts
+05-01 17:10:46.987  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+05-01 17:10:46.987  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+05-01 17:10:46.987  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:46.988  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:46.988  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+05-01 17:10:46.988  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:46.994  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+05-01 17:10:46.995  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:46.996  3046  3046 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:46.998  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:47.000  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-Appsearch.optional_253434100400.apk has no usable artifacts
+05-01 17:10:47.004  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001f/dl-MlkitBarcodeUi.optional_261332100400.apk has no usable artifacts
+05-01 17:10:47.008  3046  3046 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/C979021594972B0BA2D39F27BF33D93C4B1302BC/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 17:10:47.008  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:47.009  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:47.013  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001e/dl-VisionOcr.optional_261332100000.apk has no usable artifacts
+05-01 17:10:47.017  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000020/dl-PlayCloudSearch.optional_261332100000.apk has no usable artifacts
+05-01 17:10:47.021  3046  3051 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/707FFD883BF2A7896692338F9625CA52336E933B/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-01 17:10:47.023  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000019/dl-TfliteDynamiteDynamite.integ_252130102100400.apk has no usable artifacts
+05-01 17:10:47.025  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~3fBXho8HaymPEUVbuDbDyw==/com.google.android.gms-lP3FhbDqyEae3o3ITSwEOg==/base.apk, fd=-1
+05-01 17:10:47.030  3046  3051 W artd    : Could not get dex checksums for location /data/app/~~dKAWhbpuAhXMPrgX8_uNaA==/com.android.vending-VlQnPVZ5qb-G_00QsqpjnQ==/base.apk, fd=-1
+05-01 17:10:47.034  3046  3051 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000021/dl-Appsearch.optional_261332100400.apk has no usable artifacts
+05-01 17:10:47.038  3046  3046 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-MlkitBarcodeUi.optional_253434100400.apk has no usable artifacts
+05-01 17:10:47.796  2599  2619 W Looper  : Slow dispatch took 120ms android.ui app=system_server main=false group=TOP_APP h=com.android.server.am.ActivityManagerService$UiHandler c=com.android.server.am.UidObserverController$$ExternalSyntheticLambda0@57d0042 m=0
+05-01 17:10:48.203  2599  2796 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-01 17:10:48.302  2532  9383 D android.hardware.audio@7.1-impl.ranchu: threadLoop: entering standby, frames: 164288
+05-01 17:10:48.302  2532  9383 D android.hardware.audio@7.1-impl.ranchu: ~TinyalsaSink: joining consumeThread
+05-01 17:10:48.311  2532  9384 D android.hardware.audio@7.1-impl.ranchu: consumeThread: exiting
+05-01 17:10:48.312  2532  9383 D android.hardware.audio@7.1-impl.ranchu: ~TinyalsaSink: stopping PCM stream
+05-01 17:10:48.433  9390  9390 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: SurfaceFlingerAIDL
+05-01 17:10:48.436  9390  9390 W libbinder.BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+05-01 17:10:48.437  9390  9390 W libbinder.ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+05-01 17:10:50.183  2599  2619 W Looper  : Slow dispatch took 125ms android.ui app=system_server main=false group=TOP_APP h=com.android.server.am.ActivityManagerService$UiHandler c=com.android.server.am.UidObserverController$$ExternalSyntheticLambda0@57d0042 m=0
