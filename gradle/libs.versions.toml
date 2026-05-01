@@ -3,6 +3,9 @@ agp = "9.2.0"
 kotlin = "2.3.21"
 composeBom = "2026.04.01"
 activityCompose = "1.13.0"
+camerax = "1.4.2"
+lifecycle = "2.10.0"
+mediapipeTasksVision = "0.10.33"
 mlkitGenAiPrompt = "1.0.0-beta2"
 mlkitGenAiSpeech = "1.0.0-alpha1"
 litertLm = "0.11.0-rc1"
@@ -20,6 +23,11 @@ androidx-compose-ui = { module = "androidx.compose.ui:ui" }
 androidx-compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "camerax" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "camerax" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "camerax" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+mediapipe-tasks-vision = { module = "com.google.mediapipe:tasks-vision", version.ref = "mediapipeTasksVision" }
 mlkit-genai-prompt = { module = "com.google.mlkit:genai-prompt", version.ref = "mlkitGenAiPrompt" }
 mlkit-genai-speech-recognition = { module = "com.google.mlkit:genai-speech-recognition", version.ref = "mlkitGenAiSpeech" }
 litertlm-android = { module = "com.google.ai.edge.litertlm:litertlm-android", version.ref = "litertLm" }

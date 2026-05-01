@@ -57,8 +57,7 @@ fun SignBridgeAppContent(
                     onBack = { destination = AppDestination.Home },
                 )
 
-                AppDestination.SignToSpeech -> PlaceholderScreen(
-                    title = "Sign to Speech",
+                AppDestination.SignToSpeech -> SignToSpeechScreen(
                     onBack = { destination = AppDestination.Home },
                 )
 

@@ -30,6 +30,11 @@ dependencies {
     implementation(libs.androidx.compose.runtime)
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.mediapipe.tasks.vision)
     implementation(libs.mlkit.genai.prompt)
     implementation(libs.mlkit.genai.speech.recognition)
 
