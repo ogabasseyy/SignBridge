@@ -33,6 +33,8 @@ dependencies {
     implementation(libs.mlkit.genai.prompt)
     implementation(libs.mlkit.genai.speech.recognition)
 
+    testImplementation(libs.junit)
+
     // Phase 0 fallback only. Enable if ML Kit Prompt API cannot access Gemma on S24 Ultra.
     // implementation(libs.litertlm.android)
 }
