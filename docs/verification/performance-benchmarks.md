@@ -7,8 +7,8 @@ Date: 2026-05-01
 | Artifact | Size | Status |
 |---|---:|---|
 | Debug APK | 85 MB | Built locally |
-| `app/src/main/assets/signbridge_phrases_v1.tflite` | 108 B | Placeholder |
-| `ml/models/signbridge_phrases_v1.tflite` | 108 B | Placeholder |
+| `app/src/main/assets/signbridge_phrases_v1.tflite` | 829 KB | Valid untrained contract model |
+| `ml/models/signbridge_phrases_v1.tflite` | 829 KB | Valid untrained contract model |
 
 ## Measured Locally
 
@@ -26,7 +26,7 @@ Date: 2026-05-01
 |---|---|
 | S24 Ultra camera analyzer FPS | Physical device pending |
 | MediaPipe Holistic per-frame latency | Real MediaPipe `.task` model not wired yet |
-| Classifier inference latency | Current TFLite file is a placeholder |
+| Classifier inference latency | Android still uses placeholder interpreter; TFLite runtime wiring pending |
 | Gemma first-token/total latency | Physical S24 AICore/Gemma runtime pending |
 | TTS time-to-speech | Physical device pending |
 | RAM peak with Gemma E4B | Physical device pending |

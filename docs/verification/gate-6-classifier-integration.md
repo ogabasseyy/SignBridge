@@ -6,7 +6,7 @@ Date: 2026-05-01
 
 Partially passed.
 
-The Android app integrates the classifier asset contract, 30-frame sliding window, label parsing, top-3 result mapping, and Sign to Speech prediction UI. The current interpreter is a placeholder because the checked-in `.tflite` is a documented placeholder artifact.
+The Android app integrates the classifier asset contract, 30-frame sliding window, label parsing, top-3 result mapping, and Sign to Speech prediction UI. The checked-in `.tflite` is now a valid untrained contract model, but the Android runtime still uses a placeholder interpreter until real TFLite runtime wiring is added.
 
 ## Review
 
@@ -38,7 +38,8 @@ The Android app integrates the classifier asset contract, 30-frame sliding windo
 
 ## Remaining Gate Work
 
-- Replace placeholder interpreter with real LiteRT/TFLite runtime after a valid model exists.
+- Replace placeholder interpreter with real LiteRT/TFLite runtime.
+- Replace the untrained contract model with a trained classifier after private-data training.
 - Use actual normalized landmark windows instead of zero-filled placeholder frames.
 - Verify demo-critical phrase predictions on physical S24 Ultra.
 - Keep top-3 fallback if top-1 accuracy is imperfect.

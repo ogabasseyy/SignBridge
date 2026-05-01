@@ -4,7 +4,7 @@ Date: 2026-05-01
 
 ## Status
 
-Contract pipeline implemented; real classifier training still requires a TensorFlow-enabled environment and private landmark captures.
+Contract pipeline implemented; a valid untrained TFLite contract model now exports locally. Real classifier training still requires private landmark captures.
 
 ## Implemented
 
@@ -26,11 +26,11 @@ Contract pipeline implemented; real classifier training still requires a TensorF
   - normalization version
   - dataset SHA-256
 
-## Local Limitation
+## Local Export Result
 
-The local Python 3.13 virtual environment does not have TensorFlow installed. `ml/export_tflite.py` therefore wrote a deterministic placeholder `.tflite` artifact with backend `placeholder_no_tensorflow`.
+TensorFlow 2.21.0 was installed into the local Python 3.13 virtual environment and `ml/export_tflite.py` exported a valid float32 TFLite model with backend `tensorflow_tflite_converter`.
 
-This placeholder is not a production classifier and must not be represented as real sign recognition. The real training/export step should run in Kaggle or another TensorFlow environment, then replace the placeholder `.tflite` before Android classifier integration.
+The exported model is an untrained architecture/shape contract generated from the baseline Keras model. It is not a production classifier and must not be represented as real sign recognition. The real training step should run on the private landmark captures, then replace this contract model only after held-out accuracy and Keras/TFLite parity pass.
 
 ## Verification
 
@@ -40,8 +40,7 @@ This placeholder is not a production classifier and must not be represented as r
 
 ## Next Real Training Gate
 
-- Install TensorFlow in Kaggle.
 - Train on private landmark captures split by held-out take.
 - Export float32 TFLite through `tf.lite.TFLiteConverter`.
 - Validate Keras/TFLite parity on held-out windows.
-- Replace placeholder artifact only after parity passes.
+- Replace the untrained contract artifact only after parity passes.

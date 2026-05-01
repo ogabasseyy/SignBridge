@@ -48,7 +48,7 @@ Current:
 - Landmark normalization and tensor-shape contracts are tested.
 - TFLite export scripts and metadata contracts exist.
 - Public synthetic landmark fixture exists for CI/public review.
-- The committed `.tflite` is a placeholder, documented in `docs/verification/classifier-report.md`.
+- The committed `.tflite` is a valid untrained contract model, documented in `docs/verification/classifier-report.md`.
 
 ## Reverse Loop
 
@@ -99,5 +99,5 @@ Before a real Kaggle submission:
 2. Verify in-app Gemma rewrite and reply condensation offline.
 3. Wire live ML Kit Prompt API or LiteRT-LM generation.
 4. Wire MediaPipe Holistic real landmark extraction.
-5. Train/export a real TFLite phrase classifier.
+5. Train/export a real TFLite phrase classifier from private captures.
 6. Run the Lagos demo path three times on the S24 Ultra in airplane mode.

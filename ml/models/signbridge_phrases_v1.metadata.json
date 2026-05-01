@@ -1,5 +1,5 @@
 {
-  "backend": "placeholder_no_tensorflow",
+  "backend": "tensorflow_tflite_converter",
   "dataset_sha256": "a6f852dfd5b76959cb0fbb486956708883f4c4de8cd3cd1422d0c728393c1097",
   "input_dtype": "float32",
   "input_shape": [

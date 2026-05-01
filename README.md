@@ -24,7 +24,7 @@ This is not yet a final hackathon submission build.
 - Physical Galaxy S24 Ultra Gate 0: AICore/Gemma 4 runtime must be verified in-app.
 - Live ML Kit Prompt API or LiteRT-LM Gemma generation must replace the current deterministic placeholder.
 - MediaPipe Holistic `.task` asset and real landmark extraction must be wired.
-- The current TFLite classifier file is a placeholder; a trained classifier must be exported from real/synthetic landmark data.
+- The current TFLite classifier file is a valid untrained contract model; a trained classifier must still be exported from real landmark data.
 - Offline microphone speech recognition must be verified on the physical phone. Typed reply fallback is implemented.
 
 ## Privacy

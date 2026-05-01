@@ -39,5 +39,5 @@ Date: 2026-05-01
 ## Release Blockers
 
 - Physical S24 Ultra Gate 0 is still required before claiming in-app Gemma 4 works offline.
-- The classifier asset is a placeholder TFLite file, not a trained sign-recognition model.
+- The classifier asset is a valid untrained TFLite contract model, not a trained sign-recognition model.
 - MediaPipe Holistic extraction is not yet wired to a downloaded `.task` model asset.
