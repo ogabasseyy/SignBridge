@@ -1,0 +1,51 @@
+{
+  "dataset": {
+    "labels_seen": [
+      "Help me",
+      "How much is this?",
+      "I am Deaf",
+      "I am allergic",
+      "I am injured",
+      "I am not trying to fight",
+      "I cannot hear you",
+      "I do not understand",
+      "I have insurance",
+      "I have pain",
+      "I need a doctor",
+      "I need medicine",
+      "I want to pay",
+      "It was an accident",
+      "My brakes failed",
+      "Please call emergency services",
+      "Please call someone for me",
+      "Please calm down",
+      "Please show me the price",
+      "Please speak slowly",
+      "Please type your reply",
+      "Please write it down",
+      "Please write the dosage",
+      "Use my phone",
+      "Where is the restroom?",
+      "unknown"
+    ],
+    "sample_count": 26
+  },
+  "model_config": {
+    "architecture": "temporal-average-dense-baseline",
+    "class_count": 26,
+    "input_shape": [
+      null,
+      30,
+      1629
+    ],
+    "landmark_dim": 1629,
+    "output_shape": [
+      null,
+      26
+    ],
+    "window_frames": 30
+  },
+  "note": "Install TensorFlow in the training environment for real classifier fitting.",
+  "phrase_count": 26,
+  "status": "contract_smoke_only"
+}
