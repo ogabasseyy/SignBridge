@@ -1,0 +1,25 @@
+{
+  "dataset_size": 26,
+  "epochs_run": 2,
+  "final_accuracy": 0.05000000074505806,
+  "final_loss": 3.2709591388702393,
+  "final_val_accuracy": 0.0,
+  "final_val_loss": 4.1240315437316895,
+  "model_config": {
+    "architecture": "transformer-encoder-v1",
+    "class_count": 26,
+    "input_shape": [
+      null,
+      30,
+      1629
+    ],
+    "landmark_dim": 1629,
+    "output_shape": [
+      null,
+      26
+    ],
+    "window_frames": 30
+  },
+  "phrase_count": 26,
+  "status": "trained"
+}

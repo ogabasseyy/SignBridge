@@ -12,7 +12,7 @@ object LandmarkNormalizer {
 
     fun normalize(frame: LandmarkFrame): FloatArray {
         val output = FloatArray(LandmarkFrame.TENSOR_SIZE)
-        val torso = torsoReference(frame.pose)
+        val reference = referenceFrame(frame.pose)
         var cursor = 0
 
         cursor = writePoints(
@@ -20,28 +20,28 @@ object LandmarkNormalizer {
             start = cursor,
             points = frame.pose,
             expectedCount = LandmarkFrame.POSE_COUNT,
-            torso = torso,
+            reference = reference,
         )
         cursor = writePoints(
             output = output,
             start = cursor,
             points = frame.leftHand,
             expectedCount = LandmarkFrame.HAND_COUNT,
-            torso = torso,
+            reference = reference,
         )
         cursor = writePoints(
             output = output,
             start = cursor,
             points = frame.rightHand,
             expectedCount = LandmarkFrame.HAND_COUNT,
-            torso = torso,
+            reference = reference,
         )
         writePoints(
             output = output,
             start = cursor,
             points = frame.face,
             expectedCount = LandmarkFrame.FACE_COUNT,
-            torso = torso,
+            reference = reference,
         )
 
         return output
@@ -52,7 +52,7 @@ object LandmarkNormalizer {
         start: Int,
         points: List<LandmarkPoint?>?,
         expectedCount: Int,
-        torso: TorsoReference,
+        reference: ReferenceFrame,
     ): Int {
         var cursor = start
         repeat(expectedCount) { index ->
@@ -60,39 +60,49 @@ object LandmarkNormalizer {
             if (point == null) {
                 cursor += LandmarkFrame.VALUES_PER_LANDMARK
             } else {
-                output[cursor] = (point.x - torso.centerX) / torso.scale
-                output[cursor + 1] = (point.y - torso.centerY) / torso.scale
-                output[cursor + 2] = point.z / torso.scale
+                output[cursor] = (point.x - reference.centerX) / reference.scale
+                output[cursor + 1] = (point.y - reference.centerY) / reference.scale
+                output[cursor + 2] = point.z / reference.scale
                 cursor += LandmarkFrame.VALUES_PER_LANDMARK
             }
         }
         return cursor
     }
 
-    private fun torsoReference(pose: List<LandmarkPoint?>): TorsoReference {
-        val anchors = listOfNotNull(
-            pose.getOrNull(LEFT_SHOULDER),
-            pose.getOrNull(RIGHT_SHOULDER),
-            pose.getOrNull(LEFT_HIP),
-            pose.getOrNull(RIGHT_HIP),
-        )
-        if (anchors.isEmpty()) {
-            return TorsoReference(centerX = 0.5f, centerY = 0.5f, scale = 1.0f)
-        }
+    private const val LEFT_WRIST = 15
+    private const val RIGHT_WRIST = 16
 
-        val centerX = anchors.map { it.x }.average().toFloat()
-        val centerY = anchors.map { it.y }.average().toFloat()
-        val shoulderDistance = distance(
-            pose.getOrNull(LEFT_SHOULDER),
-            pose.getOrNull(RIGHT_SHOULDER),
-        )
-        val hipDistance = distance(
-            pose.getOrNull(LEFT_HIP),
-            pose.getOrNull(RIGHT_HIP),
-        )
+    private fun referenceFrame(pose: List<LandmarkPoint?>): ReferenceFrame {
+        val leftShoulder = pose.getOrNull(LEFT_SHOULDER)
+        val rightShoulder = pose.getOrNull(RIGHT_SHOULDER)
+        val leftHip = pose.getOrNull(LEFT_HIP)
+        val rightHip = pose.getOrNull(RIGHT_HIP)
+        val leftWrist = pose.getOrNull(LEFT_WRIST)
+        val rightWrist = pose.getOrNull(RIGHT_WRIST)
+
+        val shoulderDistance = distance(leftShoulder, rightShoulder)
+        val hipDistance = distance(leftHip, rightHip)
         val scale = max(max(shoulderDistance, hipDistance), MIN_SCALE)
 
-        return TorsoReference(centerX = centerX, centerY = centerY, scale = scale)
+        val wrists = listOfNotNull(leftWrist, rightWrist)
+        val (centerX, centerY) = if (wrists.isNotEmpty()) {
+            Pair(
+                wrists.map { it.x }.average().toFloat(),
+                wrists.map { it.y }.average().toFloat()
+            )
+        } else {
+            val torsoAnchors = listOfNotNull(leftShoulder, rightShoulder, leftHip, rightHip)
+            if (torsoAnchors.isNotEmpty()) {
+                Pair(
+                    torsoAnchors.map { it.x }.average().toFloat(),
+                    torsoAnchors.map { it.y }.average().toFloat()
+                )
+            } else {
+                Pair(0.5f, 0.5f)
+            }
+        }
+
+        return ReferenceFrame(centerX = centerX, centerY = centerY, scale = scale)
     }
 
     private fun distance(a: LandmarkPoint?, b: LandmarkPoint?): Float {
@@ -100,7 +110,7 @@ object LandmarkNormalizer {
         return hypot(a.x - b.x, a.y - b.y)
     }
 
-    private data class TorsoReference(
+    private data class ReferenceFrame(
         val centerX: Float,
         val centerY: Float,
         val scale: Float,

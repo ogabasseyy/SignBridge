@@ -268,8 +268,8 @@ Each gate creates or updates `docs/verification/gate-N-<name>.md` with:
 - [ ] Add CameraX front-camera preview at 720p target resolution.
 - [ ] Wire push-to-sign UI to the tested state reducer.
 - [ ] Run MediaPipe landmarks in the analyzer.
-- [ ] Normalize landmarks by torso scale and center around shoulders/hips.
-- [ ] Draw a debug overlay for hands and pose.
+- [ ] Normalize landmarks by torso scale and center around shoulders/hips (root-landmark normalization relative to wrist/torso).
+- [ ] Draw a debug overlay for hands and pose. Ensure both the Android runtime and the offline data extraction script use the exact same MediaPipe Hands + Pose extractor tasks (do not use the deprecated Holistic task) to prevent train/serve skew.
 - [ ] Keep raw video in memory only. Do not persist frames.
 - [ ] Run unit tests and a manual device check for preview, recording, and overlay.
 - [ ] Run a light `test-android-apps:android-emulator-qa` smoke check for launch, camera permission screen/state, Sign to Speech navigation, UI tree, screenshot, and logcat. Save evidence to `docs/verification/test-android-apps-smoke-camera.md`.
@@ -308,7 +308,7 @@ Each gate creates or updates `docs/verification/gate-N-<name>.md` with:
 - [ ] GREEN: implement `generate_synthetic_fixture.py` and create `ml/fixtures/synthetic_landmarks.jsonl`.
 - [ ] RED: write `test_dataset_card.py` asserting `ml/DATASET_CARD.md` contains sections for consent, privacy, private captures, public synthetic fixture, phrase labels, and reviewer reproduction commands.
 - [ ] Run `pytest ml/tests/test_dataset_card.py -q` and verify it fails because the dataset card does not exist.
-- [ ] Add `ml/DATASET_CARD.md` explaining private capture policy, consent posture, exact phrase labels, synthetic fixture purpose, and how reviewers can run tests without private recordings.
+- [ ] Add `ml/DATASET_CARD.md` explaining private capture policy, consent posture, exact phrase labels, synthetic fixture purpose, and how reviewers can run tests without private recordings. Include a section documenting the Lanfrica NSL dataset license (Apache-2.0 compatibility), signer demographics, consent posture, and which subset is used for representation learning.
 - [ ] Run `pytest ml/tests/test_dataset_card.py -q` and verify it passes.
 - [ ] RED: write Python tests for dataset validation: rejects missing phrases, rejects wrong frame count, accepts 25 phrases + unknown, and rejects raw video files in the dataset folder.
 - [ ] Run `pytest ml/tests/test_validate_landmark_dataset.py -q` and verify it fails because the validator does not exist.
@@ -348,7 +348,9 @@ Each gate creates or updates `docs/verification/gate-N-<name>.md` with:
 - Create: `ml/tests/test_model_shapes.py`
 - Create: `ml/tests/test_evaluate_classifier.py`
 - Create: `ml/tests/test_tflite_export_contract.py`
+- Create: `ml/scripts/pretrain_on_asl.py`
 - Create: `ml/models/README.md`
+- Create: `ml/MODEL_CARD.md`
 - Create: `docs/verification/classifier-report.md`
 
 - [ ] RED: write tests that assert the Keras model input shape is `[None, 30, LANDMARK_DIM]`, output shape is `[None, 26]`, and class count is `26` including `unknown`.
@@ -368,17 +370,21 @@ Each gate creates or updates `docs/verification/gate-N-<name>.md` with:
 - [ ] Export float32 TFLite first. Do not int8-quantize until float32 parity passes.
 - [ ] Add `export_metadata.py` to write label mapping, input shape, normalization version, model version, and training dataset hash.
 - [ ] Run a training/export smoke test on `ml/fixtures/synthetic_landmarks.jsonl` so public reviewers can verify the pipeline without private captures.
-- [ ] Train a simple baseline first: temporal 1D CNN or compact Transformer over 30-frame windows.
-- [ ] Use augmentation: temporal jitter, small landmark noise, frame dropout, horizontal flip only if labels remain valid.
+- [ ] Implement the SOTA architecture in `ml/signbridge_model.py`: a 1D-CNN Stem -> Transformer Blocks (Self-Attention) -> ECA (Efficient Channel Attention) over a fixed `WINDOW_FRAMES = 30` input length. Keep the final classification head at 26 classes (25 phrases + `unknown`).
+- [ ] Use Lanfrica NSL and ASL Citizen datasets strictly for representation-learning warm-starts via `ml/scripts/pretrain_on_asl.py`. Fine-tune the final 26-class head on custom captures. Train the `unknown` class explicitly with negative examples.
+- [ ] Apply augmentations strictly in this order: time-warp -> spatial affine -> finger dropout.
 - [ ] Export `signbridge_phrases_v1.tflite` and `signbridge_phrases_v1.labels.json`.
 - [ ] Validate TFLite parity by running the Keras model and the TFLite interpreter on at least 20 held-out windows; require matching top-1 for at least 19/20 and matching top-3 for 20/20 before Android integration.
 - [ ] Optional only after float32 parity: export dynamic-range quantized TFLite and keep it only if top-3 parity and on-device latency improve.
 - [ ] Evaluate top-1, top-3, confusion matrix, and per-class recall.
+- [ ] Perform bias evaluation and confusion matrix slices by lighting tag and signer.
+- [ ] Write `ml/MODEL_CARD.md` detailing intended use, out-of-scope use, training summary, evaluation slices, and known failure modes. Add a single-signer limitation banner.
+- [ ] Record model size (<40MB limit), first-inference latency, and steady-state inference latency on target hardware.
 - [ ] Gate:
-  - If top-1 >= 85% on your held-out takes: continue with 25 phrases.
+  - If top-1 >= 85% on your held-out takes AND float32 parity holds: continue with 25 phrases.
   - If top-1 is 70-84%: keep 25 phrases but rely on top-3 picker.
-  - If top-1 < 70% by end of Day 8: cut live recognition to the 15 strongest phrases and keep the full emergency/manual grid.
-- [ ] Commit training scripts, report, and exported model metadata.
+  - If top-1 < 70% by end of Day 8 or if latency/size budget is blown: cut live recognition to the 15 strongest phrases and keep the full emergency/manual grid.
+- [ ] Commit training scripts, report, model card, and exported model metadata.
 
 ### Review Gate 5: Classifier Evidence Review
 
@@ -401,8 +407,10 @@ Each gate creates or updates `docs/verification/gate-N-<name>.md` with:
 - Create: `app/src/main/java/com/signbridge/ml/SlidingWindowBuffer.kt`
 - Create: `app/src/main/java/com/signbridge/ml/SignClassifier.kt`
 - Create: `app/src/main/java/com/signbridge/ml/ClassificationResult.kt`
+- Create: `app/src/main/java/com/signbridge/ml/ExponentialSmoother.kt`
 - Create: `app/src/test/java/com/signbridge/ml/SlidingWindowBufferTest.kt`
 - Create: `app/src/test/java/com/signbridge/ml/SignClassifierTensorContractTest.kt`
+- Create: `app/src/test/java/com/signbridge/ml/ExponentialSmootherTest.kt`
 
 - [ ] RED: write `SlidingWindowBufferTest` for 30-frame readiness, reset behavior, overflow behavior, and stable tensor ordering.
 - [ ] Run the focused test and verify it fails because `SlidingWindowBuffer` does not exist.
@@ -412,8 +420,10 @@ Each gate creates or updates `docs/verification/gate-N-<name>.md` with:
 - [ ] GREEN: implement classifier wrapper/mapping around LiteRT/TFLite.
 - [ ] RED: write `SignClassifierTensorContractTest` asserting asset label IDs match `PhraseCatalog`, input shape is 30 frames, and output class count is 26.
 - [ ] Run the tensor contract test and verify it fails before assets/metadata are wired.
+- [ ] RED: write `ExponentialSmootherTest` proving constant-input yields constant-output, and step-change yields a bounded transient prediction curve.
+- [ ] GREEN: implement `ExponentialSmoother` to prevent UI flicker on live predictions.
 - [ ] GREEN: copy the exported `.tflite` and `.labels.json` into app assets and wire metadata loading.
-- [ ] Run inference after the user releases push-to-sign.
+- [ ] Run inference after the user releases push-to-sign. Apply the `ExponentialSmoother` to the live confidence scores.
 - [ ] Display top-3 predictions and confidence.
 - [ ] Never auto-speak below 0.65 confidence.
 - [ ] Run unit tests plus one manual on-device prediction pass.
@@ -590,11 +600,15 @@ Each gate creates or updates `docs/verification/gate-N-<name>.md` with:
 ## Phase 11: Release Candidate
 
 **Files:**
+- Create: `docs/adr/003-float32-vs-int8.md`
 - Create: `docs/release/apk-signing.md`
 - Modify: `README.md`
 - Create: `WRITEUP.md`
 
+- [ ] Write three short ADRs for ML Kit vs LiteRT-LM, hands+pose vs Holistic, and float32 vs int8.
 - [ ] Generate release keystore and document where it is stored outside git.
+- [ ] Draft `docs/privacy.md` and threat model detailing what stays on device, what leaves, and what is logged.
+- [ ] Update `WRITEUP.md` with Lanfrica NSL dataset attribution.
 - [ ] Build signed APK.
 - [ ] Install APK from scratch on S24 Ultra.
 - [ ] Run the exact demo path three times on the physical S24 Ultra and update `docs/verification/physical-s24-qa.md`.

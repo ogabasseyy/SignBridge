@@ -27,24 +27,41 @@ object SignClassifierInput {
 class SignClassifier(
     private val labels: List<ModelLabel>,
     private val interpreter: SignInterpreter,
+    private val smoothingAlpha: Float = 0.5f,
 ) {
+    private var smoothedScores: FloatArray? = null
+
     fun classify(input: FloatArray): List<ClassificationResult> {
         val scores = interpreter.run(input)
         require(scores.size == labels.size) {
             "Expected ${labels.size} scores but got ${scores.size}"
         }
 
-        return scores.indices
-            .sortedByDescending { scores[it] }
+        if (smoothedScores == null) {
+            smoothedScores = scores.clone()
+        } else {
+            val current = smoothedScores!!
+            for (i in scores.indices) {
+                current[i] = (smoothingAlpha * scores[i]) + ((1.0f - smoothingAlpha) * current[i])
+            }
+        }
+
+        val displayScores = smoothedScores!!
+        return displayScores.indices
+            .sortedByDescending { displayScores[it] }
             .take(3)
             .map { index ->
                 val label = labels[index]
                 ClassificationResult(
                     labelId = label.id,
                     label = label.label,
-                    confidence = scores[index],
+                    confidence = displayScores[index],
                 )
             }
+    }
+
+    fun reset() {
+        smoothedScores = null
     }
 }
 

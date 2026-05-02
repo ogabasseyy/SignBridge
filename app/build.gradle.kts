@@ -41,9 +41,10 @@ dependencies {
 
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
-    androidTestImplementation(libs.androidx.test.espresso.core)
     androidTestImplementation(libs.androidx.test.ext.junit)
+    androidTestImplementation(libs.androidx.test.espresso.core)
+    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+    androidTestImplementation("androidx.test:rules:1.6.1")
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
     // Phase 0 fallback only. Enable if ML Kit Prompt API cannot access Gemma on S24 Ultra.

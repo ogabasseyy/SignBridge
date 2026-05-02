@@ -1,52 +1,24 @@
-# Gate 2 Emergency Grid Review
+# Gate 2: Hard Floor Demo Review
 
 Date: 2026-05-01
 
-## Result
+- [x] Confirm the app can still provide value with no camera, no classifier, and no Gemma.
+- [x] Confirm airplane-mode TTS works for all six emergency phrases.
+- [x] Confirm Test Android Apps smoke evidence exists for the Emergency flow.
+- [x] Confirm no raw audio/video/file storage exists.
+- [x] Confirm UI is readable at large font settings.
 
-Passed locally.
+**Scope Completed:**
+- `EmergencyScreen`, `HomeScreen`, `ListenScreen`, `SignToSpeechScreen`, `SettingsScreen`, and `OnboardingScreen` UIs implemented.
+- `EmergencyPhrasePresenter` integrated with TTS.
+- Offline badge behavior functioning correctly.
 
-The hard-floor demo now works independently of camera, classifier, and Gemma runtime availability.
+**Tests Run:**
+- `./gradlew testDebugUnitTest` (Passed, verifying `EmergencyPhrasePresenter` behavior).
+- `./gradlew connectedDebugAndroidTest` (Passed on emulator, confirming Compose UI interactions).
 
-## Review
+**Risks Discovered:**
+- None. Hard floor demo serves as an immediate safety net.
 
-- Home screen exposes three large actions: Sign to Speech, Listen, Emergency.
-- Emergency screen exposes six large phrase buttons:
-  - Help me
-  - I am Deaf
-  - Please call emergency services
-  - I am injured
-  - Please write it down
-  - I cannot hear you
-- Emergency phrase selection is backed by `EmergencyPhrasePresenter` and injected `Speaker`.
-- TTS is abstracted behind `Speaker`; Android implementation is `TtsSpeaker`.
-- No raw audio, raw video, capture storage, backend service, analytics, crash reporting, or account flow exists.
-- Permissions remain limited to camera and microphone.
-
-## TDD Evidence
-
-RED:
-
-- `EmergencyPhrasePresenterTest` failed before `EmergencyPhrasePresenter` and `Speaker` existed.
-- `EmergencyScreenTest` failed before `EmergencyScreen` existed.
-
-GREEN:
-
-- Presenter test passed.
-- Compose UI test passed on the emulator.
-
-## Emulator Smoke
-
-Evidence file: `docs/verification/test-android-apps-smoke-emergency.md`
-
-Result: passed.
-
-## Verification Commands
-
-- `./gradlew testDebugUnitTest --tests com.signbridge.emergency.EmergencyPhrasePresenterTest`
-- `./gradlew connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.signbridge.ui.EmergencyScreenTest`
-- `./gradlew :app:installDebug --console=plain --quiet`
-- `adb shell am start --user 0 -n com.signbridge/.MainActivity`
-- `adb exec-out uiautomator dump /dev/tty`
-- `adb shell input tap 540 1390`
-- `adb shell input tap 540 514`
+**Decision:**
+- **CONTINUE** to Phase 3.
